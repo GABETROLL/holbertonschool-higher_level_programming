@@ -19,3 +19,4 @@ python3 \<exercise file\>
 3. how to print an integer and a string together, separated by a space, aka: how to use an f-string
 4. how to print a float with 2 (or n) decimals
 5. how to print a string multiplied by an integer
+6. how to add strings
