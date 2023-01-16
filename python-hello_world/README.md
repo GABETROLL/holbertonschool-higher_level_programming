@@ -20,3 +20,4 @@ python3 \<exercise file\>
 4. how to print a float with 2 (or n) decimals
 5. how to print a string multiplied by an integer
 6. how to add strings
+7. how to make strings that are 'slices' of other strings
