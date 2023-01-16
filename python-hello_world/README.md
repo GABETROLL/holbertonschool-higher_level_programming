@@ -22,4 +22,4 @@ python3 \<exercise file\>
 6. how to add strings
 7. how to make strings that are 'slices' of other strings
 8. how to redefine a 'str' variable to be its joint specific slices in a specific order to form a new phrase (it's a surprise ;) )
-
+9. how to find a poem about style guidelines (good advice bu I disagree with the attitude and the phrase "The Zen of Python")
