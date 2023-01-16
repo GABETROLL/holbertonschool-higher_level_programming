@@ -21,3 +21,5 @@ python3 \<exercise file\>
 5. how to print a string multiplied by an integer
 6. how to add strings
 7. how to make strings that are 'slices' of other strings
+8. same as exercise 7, but re-defining the 'str' variable instead, by adding its slices together to form a new phrase
+
