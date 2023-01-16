@@ -26,10 +26,10 @@ python3 <exercise file>
 ### advanced tasks
 102. how to make a function that is compiled to this Python byte code:
 ```
-  3           0 LOAD\_CONST               1 (98)
-              3 LOAD\_FAST                0 (a)
-              6 LOAD\_FAST                1 (b)
-              9 BINARY\_POWER
-             10 BINARY\_ADD
-             11 RETURN\_VALUE
+  3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
 ```
