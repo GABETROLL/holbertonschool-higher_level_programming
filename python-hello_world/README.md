@@ -11,3 +11,9 @@ export \<variable name\>=\<string\>
 0. how to run a Python file
 1. how to run a Python command inline
 
+The following exercises can be ran like this:
+'''
+python3 \<exercise file\>
+'''
+2. how to print EXACTLY: _"Programming is like building a multilingual puzzle_ follow by a new line
+
