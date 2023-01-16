@@ -33,3 +33,8 @@ python3 <exercise file>
              10 BINARY_ADD
              11 RETURN_VALUE
 ```
+To verify this, run:
+```
+python3 -m dis 102-magic_calculation.py
+```
+in the command line and scroll down to the function's dissasembled Python byte code.
