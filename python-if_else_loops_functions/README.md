@@ -5,4 +5,4 @@
 2. print all letters of the English alphabet in UPPERCASE only using an f-string and one print call
 3. same as exercise 2, but without the letters q and e.
 4. print all the natural numbers from 0 to 98 in base ten and base 16
-5. print all the natural numbers from 0 to 99 with two digits using a generator comprehension, the str.join method and a string format
+5. print all the natural numbers from 0 to 99 with ", " separating them, with two digits, even when the ints are below 10, using a string format
