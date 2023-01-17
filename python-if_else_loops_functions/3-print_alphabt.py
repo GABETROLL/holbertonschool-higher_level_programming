@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 for letter in range(97, 97 + 26):
     if letter != ord("q") and letter != ord("e"):
-        print("{}".format(chr(letter)))
+        print("{}".format(chr(letter)), end="")
