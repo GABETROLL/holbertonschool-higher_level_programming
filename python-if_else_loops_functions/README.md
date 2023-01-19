@@ -9,3 +9,6 @@
 6. print all combinations of two digits, but without repeating the same two digits in a different order
 7. check if a character is lowercase
 8. print the a string with all its lowercase letters made uppercase
+10. add two numbers
+11. raise one number to the power of another
+12. classic "FizzBuzz" programming exercise
