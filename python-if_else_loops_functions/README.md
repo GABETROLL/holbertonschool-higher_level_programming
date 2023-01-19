@@ -6,3 +6,6 @@
 3. same as exercise 2, but without the letters q and e.
 4. print all the natural numbers from 0 to 98 in base ten and base 16
 5. print all the natural numbers from 0 to 99 with ", " separating them, with two digits, even when the ints are below 10, using a string format
+6. print all combinations of two digits, but without repeating the same two digits in a different order
+7. check if a character is lowercase
+8. print the a string with all its lowercase letters made uppercase
