@@ -12,4 +12,4 @@ def print_list_integer(my_list=[]):
     DEFINITION TIME, AND NOT AT FUNCTION CALL TIME!!!
     """
     for integer in my_list:
-        print("{}".format(integer))
+        print("{:d}".format(integer))
