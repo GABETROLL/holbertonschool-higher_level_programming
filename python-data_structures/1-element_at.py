@@ -8,6 +8,5 @@ def element_at(my_list, index):
     If the index is negative or out of range,
     it returns None.
     """
-    if index < 0 or index > len(my_list):
-        return
-    return my_list[index]
+    if 0 <= index < len(my_list):
+        return my_list[index]
