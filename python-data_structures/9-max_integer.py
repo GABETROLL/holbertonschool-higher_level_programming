@@ -6,6 +6,9 @@ def max_integer(my_list=[]):
     in my_list. If my_list is None or empty,
     this function returns None.
 
+    The challenge here is to not use the
+    builtin function 'max'.
+
     Assumes all the items in my_list are
     of type 'int', or, more specifically,
     any type that supports the '>' and '<'
@@ -21,5 +24,10 @@ def max_integer(my_list=[]):
 
     max_int = None
     for next_int in my_list:
-        if next_int > max_int or max_int is None:
+        # if the first condition here is True,
+        # the execution doesn't bother checking
+        # for the other one, and skips straight into
+        # the code block. This means the right
+        # check won't give us errors.
+        if max_int is None or next_int > max_int:
             max_int = next_int
