@@ -12,4 +12,4 @@ def print_matrix_integer(matrix=[[]]):
 
     """
     for row in matrix:
-        print("{:d}".format(" ".join(row)))
+        print(" ".join("{:d}".format(row)))
