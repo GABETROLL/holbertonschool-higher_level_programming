@@ -3,6 +3,22 @@
 
 def max_integer(my_list=[]):
     """
+    DISCLAIMER: MUTABLE DEFAULT ARGUMENTS LIKE
+    'my_list' ARE DEFINED AT FUNCTION DEFINITION
+    TIME, AND NOT AT FUNCTION CALL TIME!!!
+
+    THIS MEANS THE LIST ABOVE IS PUT INTO MEMORY
+    WHEN THIS FUNCTION GETS DEFINED,
+    AND EVERY TIME THIS FUNCTION IS CALLED WITH
+    THE DEFAULT PARAMETER, THE LOADED PARAMETER
+    WILL BE THE SAME LIST LOADED THE LAST TIME,
+    AND NOT A NEW LIST. THIS CAN HAVE THE PREVIOUS
+    CALLS AFFECT THE EMPTY LIST BY THE TIME THE
+    CURRENT CALL RUNS.
+
+    FOR A CLEARER EXPLANATION, VISIT:
+    https://docs.python-guide.org/writing/gotchas/
+
     Finds and returns the biggest item
     in my_list. If my_list is None or empty,
     this function returns None.

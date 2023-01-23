@@ -1,5 +1,32 @@
-# Python Lists & Iterables
-## Python: How to iterate, modify and copy lists, and how to work with iterables OF lists
+# Python Data Structures
+## Python: How to iterate through, modify and copy, lists, and how to work with iterables OF lists, tuples and strings
+## Disclaimer
+MUTABLE DEFAULT PARAMETERS LIKE THIS:
+```
+def test(default=[]):
+```
+WERE PART OF THE REQUIREMENT OF THE EXERCISES AT HOLBERTON.
+UNFORTUNATELY, THEY CAN BE A REAL CURVEBALL FOR MOST BEGGINERS,
+AND THAT'S WHY I'VE PUT THIS WARNING HERE, ALONG WITH
+EVERY SINGLE EXERCISE THAT CONTAINS IT.
+
+### Explanation
+MUTABLE DEFAULT ARGUMENTS
+ARE DEFINED AT FUNCTION DEFINITION
+TIME, AND NOT AT FUNCTION CALL TIME!!!
+
+THIS MEANS THE LIST ABOVE IS PUT INTO MEMORY
+WHEN THIS FUNCTION GETS DEFINED,
+AND EVERY TIME THIS FUNCTION IS CALLED WITH
+THE DEFAULT PARAMETER, THE LOADED PARAMETER
+WILL BE THE SAME LIST LOADED THE LAST TIME,
+AND NOT A NEW LIST. THIS CAN HAVE THE PREVIOUS
+CALLS AFFECT THE EMPTY LIST BY THE TIME THE
+CURRENT CALL RUNS.
+
+FOR A CLEARER EXPLANATION, VISIT:
+https://docs.python-guide.org/writing/gotchas/
+
 ## Directory
 0. how to print all items in a list
 - how to iterate through a list (or any iterable) in a for-loop

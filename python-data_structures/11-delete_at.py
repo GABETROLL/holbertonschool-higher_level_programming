@@ -3,6 +3,21 @@
 
 def delete_at(my_list=[], idx=0):
     """
+    DISCLAIMER: MUTABLE DEFAULT ARGUMENTS LIKE
+    'my_list' ARE DEFINED AT FUNCTION DEFINITION
+    TIME, AND NOT AT FUNCTION CALL TIME!!!
+
+    THIS MEANS THE LIST ABOVE IS PUT INTO MEMORY
+    WHEN THIS FUNCTION GETS DEFINED,
+    AND EVERY TIME THIS FUNCTION IS CALLED WITH
+    THE DEFAULT PARAMETER, THE LOADED PARAMETER
+    WILL BE THE SAME LIST LOADED THE LAST TIME,
+    AND NOT A NEW LIST. THIS CAN HAVE THE PREVIOUS
+    CALLS AFFECT THE EMPTY LIST BY THE TIME THE
+    CURRENT CALL RUNS.
+
+    FOR A CLEARER EXPLANATION, VISIT:
+    https://docs.python-guide.org/writing/gotchas/
     Deletes the item at index 'idx' in
     list 'my_list', and slides all the remaining
     elements into its place
