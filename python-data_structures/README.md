@@ -16,3 +16,5 @@
 6. how to print all items in a matrix
 - how to use nested for-loops
 7. how to add the first two items of two tuples with the other tuple's corresponding item to create a new tuple
+8. how to return tuples
+- tuples don't always need parenthesis!!! :)
