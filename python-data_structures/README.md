@@ -7,6 +7,7 @@
 2. how to replace an item from a list at an index with another item
 3. how to iterate through a list in reverse
 - how to use the built-in 'reversed' iterable
+- how to check if a value is None
 4. how to replace an item from a list at an index in a COPY of that list
 5. how to create a copy of a string without it's "c" or "C" substrings
 - how to use the str.join method
