@@ -20,4 +20,4 @@
 - tuples don't always need parenthesis!!! :)
 9. how to find the biggest int (or any item that can be compared) in a list
 - look at exercise 0 for help
-
+- short-circuiting

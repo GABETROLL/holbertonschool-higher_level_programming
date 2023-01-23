@@ -29,5 +29,7 @@ def max_integer(my_list=[]):
         # for the other one, and skips straight into
         # the code block. This means the right
         # check won't give us errors.
+
+        # This is called 'short-circuiting'
         if max_int is None or next_int > max_int:
             max_int = next_int
