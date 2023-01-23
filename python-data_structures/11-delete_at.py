@@ -23,5 +23,5 @@ def delete_at(my_list=[], idx=0):
     (read above) to returning the original list.
     """
     if my_list and 0 <= idx < len(my_list):
-        del new_list[idx]
+        del my_list[idx]
     return my_list
