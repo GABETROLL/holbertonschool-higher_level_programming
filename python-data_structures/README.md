@@ -24,3 +24,4 @@
 10. how to make a list with booleans that correspond to ints being devisible by 2 in another list
 11. how to delete an item at an index in a list without using 'list.pop'
 - del keyword
+12. how to swap values with tuple unpacking
