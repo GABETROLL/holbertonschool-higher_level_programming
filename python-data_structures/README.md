@@ -18,3 +18,6 @@
 7. how to add the first two items of two tuples with the other tuple's corresponding item to create a new tuple
 8. how to return tuples
 - tuples don't always need parenthesis!!! :)
+9. how to find the biggest int (or any item that can be compared) in a list
+- look at exercise 0 for help
+
