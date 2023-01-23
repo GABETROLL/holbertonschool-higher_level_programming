@@ -33,3 +33,4 @@ def max_integer(my_list=[]):
         # This is called 'short-circuiting'
         if max_int is None or next_int > max_int:
             max_int = next_int
+    return
