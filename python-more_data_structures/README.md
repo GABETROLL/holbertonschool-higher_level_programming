@@ -34,3 +34,6 @@ These are all of the exercises' objectives, along with phrases you can look up i
 11. Use 'map' to make a copy of a list with all its items multiplied by a number
 - Python map
 - Python lambda
+12. Turn a roman numeral string into an integer
+- roman numerals suck
+- please help me
