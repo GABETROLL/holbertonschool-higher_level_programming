@@ -18,4 +18,6 @@ These are all of the exercises' objectives, along with phrases you can google (w
 - Python len(dict)
 6. Print key-value pairs in a dictionray, with the pairs being sorted by the keys
 - Python sort and lambda
-
+7. Set (or change) key in a dictionary
+- Python dictionary assign value to key
+- https://www.digitalocean.com/community/tutorials/python-add-to-dictionary
