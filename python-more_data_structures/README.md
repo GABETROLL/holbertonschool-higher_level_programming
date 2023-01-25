@@ -6,4 +6,6 @@
 2. Add all items in an iterable, without adding the same item multiple times
 - 'set' data structure
 - 'sum' function
+3. Make a new set with only the items present in two sets
+- set intersections
 
