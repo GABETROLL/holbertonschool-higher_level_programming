@@ -21,3 +21,6 @@ These are all of the exercises' objectives, along with phrases you can look up i
 7. Set (or change) key in a dictionary
 - Python dictionary assign value to key
 - https://www.digitalocean.com/community/tutorials/python-add-to-dictionary
+8. Delete a key-value pair from a dictionary, but only if that key is present, using only the key
+- Python dict safe delete
+- Python dictionary.pop
