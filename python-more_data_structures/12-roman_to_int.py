@@ -12,16 +12,19 @@ def roman_to_int(roman_string):
     if type(roman_string) != str:
         return None
 
-    digit_values = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-
+    DIGIT_VALUES = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    # constants are defined UPPER_CASE
     result: int = 0
 
     last_roman_digit = ""
     for roman_digit in reversed(roman_string):
-        if last_roman_digit and roman_digit < last_roman_digit:
-            result -= digit_values[roman_digit]
+        last_value = DIGIT_VALUES[last_roman_digit]
+        value = DIGIT_VALUES[roman_digit]
+
+        if last_roman_digit and value < last_value:
+            result -= value
         else:
-            result += digit_values[roman_digit]
+            result += value
         last_roman_digit = roman_digit
 
     return result
