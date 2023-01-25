@@ -19,9 +19,9 @@ def roman_to_int(roman_string):
     last_roman_digit = ""
     for roman_digit in reversed(roman_string):
         if last_roman_digit and roman_digit < last_roman_digit:
-            result -= roman_digit
+            result -= digit_values[roman_digit]
         else:
-            result += roman_digit
+            result += digit_values[roman_digit]
         last_roman_digit = roman_digit
 
     return result
