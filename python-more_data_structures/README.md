@@ -30,3 +30,7 @@ These are all of the exercises' objectives, along with phrases you can look up i
 10. Find the key in a dictionary with its biggest value
 - iterating Python dictionaries
 - Python max function
+- Python lambda
+11. Use 'map' to make a copy of a list with all its items multiplied by a number
+- Python map
+- Python lambda
