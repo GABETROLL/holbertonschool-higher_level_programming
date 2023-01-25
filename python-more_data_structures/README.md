@@ -12,4 +12,5 @@ These are all of the exercises' objectives, along with phrases you can google (w
 3. Make a new set with only the items present in two sets
 - set intersections
 - Python set intersections
-
+4. Make a new set with only the items present in one of two sets
+- Python set difference
