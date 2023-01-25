@@ -10,6 +10,4 @@ def multiply_list_map(my_list=[], number=0):
     """
     if my_list is None:
         return
-    # maps CAN be empty!!!
-    # but not None
     return map(my_list, lambda x: x * 2)
