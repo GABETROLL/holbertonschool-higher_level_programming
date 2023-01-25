@@ -17,6 +17,7 @@ These are all of the exercises' objectives, along with phrases you can look up i
 5. Get the number of keys (and values) in a python dictionary
 - Python len(dict)
 6. Print key-value pairs in a dictionray, with the pairs being sorted by the keys
+- iterating Python dictionaries
 - Python sort and lambda
 7. Set (or change) key in a dictionary
 - Python dictionary assign value to key
@@ -26,3 +27,6 @@ These are all of the exercises' objectives, along with phrases you can look up i
 - Python dictionary.pop
 9. Create a copy of a dictionary with all the values of the previous dict doubled
 - see exercise 0
+10. Find the key in a dictionary with its biggest value
+- iterating Python dictionaries
+- Python max function
