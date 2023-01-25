@@ -19,10 +19,12 @@ def roman_to_int(roman_string):
     last_roman_digit = ""
     for roman_digit in reversed(roman_string):
         last_value = DIGIT_VALUES[last_roman_digit]
-        value = DIGIT_VALUES[roman_digit]
 
-        if last_roman_digit and value < last_value:
-            result -= value
+        if last_roman_digit:
+            value = DIGIT_VALUES[roman_digit]
+
+            if value < last_value:
+                result -= value
         else:
             result += value
         last_roman_digit = roman_digit
