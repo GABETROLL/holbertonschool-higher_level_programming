@@ -1,6 +1,6 @@
 # Python Sets, Dictionaries and more Data structures
 ## Directory
-These are all of the exercises' objectives, along with phrases you can google (with "Python in there just in case) in case you get stuck.
+These are all of the exercises' objectives, along with phrases you can look up in the www in case you get stuck.
 
 0. Square all the integers of a matrix out-of-place
 - Python Generator comprehensions
