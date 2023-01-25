@@ -7,5 +7,7 @@ def print_sorted_dictionary(a_dictionary):
     like this: "{key}: {value}"
     BUT with the pairs being sorted by the keys
     """
-    for items in sorted(a_dictionary.items(), key=lambda pair: pair[0]):
+    # 'a_dictionary.items()' returns a collection of tuples
+    # with each key-value pair in 'a_dictionary' like this: (key value)
+    for key, value in sorted(a_dictionary.items(), key=lambda pair: pair[0]):
         print(f"{key}: {value}")
