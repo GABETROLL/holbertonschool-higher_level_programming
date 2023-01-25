@@ -6,11 +6,14 @@ These are all of the exercises' objectives, along with phrases you can google (w
 - Python Generator comprehensions
 1. Replace all items equal to something with something else in an iterable, out-of-place
 2. Add all items in an iterable, without adding the same item multiple times
-- 'set' data structure
-- Python 'set' data structure
-- Python 'sum' function
+- set data structure
+- Python set
+- Python sum function
 3. Make a new set with only the items present in two sets
 - set intersections
 - Python set intersections
 4. Make a new set with only the items present in one of two sets
 - Python set difference
+5. Get the number of keys (and values) in a python dictionary
+- Python len(dict)
+
