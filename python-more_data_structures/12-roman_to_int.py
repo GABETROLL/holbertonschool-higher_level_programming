@@ -15,7 +15,7 @@ def roman_to_int(roman_string):
     DIGIT_VALUES = {"I": 1, "V": 5, "X": 10, "L": 50,
                     "C": 100, "D": 500, "M": 1000}
     # constants are defined UPPER_CASE
-    result: int = 0
+    result = 0
 
     last_roman_digit = ""
     for roman_digit in reversed(roman_string):
