@@ -16,4 +16,6 @@ These are all of the exercises' objectives, along with phrases you can google (w
 - Python set difference
 5. Get the number of keys (and values) in a python dictionary
 - Python len(dict)
+6. Print key-value pairs in a dictionray, with the pairs being sorted by the keys
+- Python sort and lambda
 
