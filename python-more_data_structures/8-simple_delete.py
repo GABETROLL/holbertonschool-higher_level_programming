@@ -9,5 +9,5 @@ def simple_delete(a_dictionary, key=""):
     """
     # None prevents the pop method raising a
     # KeyError when the key isn't in the dict
-    a_dictionary.pop("key", None)
+    a_dictionary.pop(key, None)
     return a_dictionary
