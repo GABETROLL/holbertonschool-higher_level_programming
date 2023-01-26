@@ -26,7 +26,7 @@ These are all of the exercises' objectives, along with phrases you can look up i
 - Python dict safe delete
 - Python dictionary.pop
 9. Create a copy of a dictionary with all the values of the previous dict doubled
-- see exercise 0
+- Python dictionary comprehensions
 10. Find the key in a dictionary with its biggest value
 - iterating Python dictionaries
 - Python max function
@@ -44,3 +44,6 @@ These are all of the exercises' objectives, along with phrases you can look up i
 101. Make a copy of a matrix with all its items squared with 'map', NO loops and in just 3 lines
 - see exercise 0
 - Python 'map' and lambda
+102. Make a copy of a dictionary with all its key-value pairs that don't contain a certain value
+- Python dictionary comprehensions
+- Also see: Python filter
