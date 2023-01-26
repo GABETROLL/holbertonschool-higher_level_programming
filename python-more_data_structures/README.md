@@ -40,4 +40,7 @@ These are all of the exercises' objectives, along with phrases you can look up i
 
 ### Advanced Tasks
 100. Calculate the wieghted average of a list of tuples with a score and a wight
-
+- Python 'sum'
+101. Make a copy of a matrix with all its items squared with 'map' and in just 3 lines
+- see exercise 0
+- Python 'map' and lambda
