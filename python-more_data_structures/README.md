@@ -37,3 +37,7 @@ These are all of the exercises' objectives, along with phrases you can look up i
 12. Turn a roman numeral string into an integer
 - roman numerals suck
 - please help me
+
+### Advanced Tasks
+100. Calculate the wieghted average of a list of tuples with a score and a wight
+
