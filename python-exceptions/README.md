@@ -11,3 +11,7 @@
 1. Handle ValueError and TypeError when trying to print integer with an integer formatter without using 'type'
 - see above
 2. Handle ValueError, TypeError and IndexError similarly to exercise 1, but IndexError being handled differently, in a different code block
+3. Handle ZeroDivisionError using 'try', 'except' and 'finally'.
+- Python finally
+- [Defining Clean-up Actions in Python's website](https://docs.python.org/3/tutorial/errors.html) (scroll down to section 8.7)
+
