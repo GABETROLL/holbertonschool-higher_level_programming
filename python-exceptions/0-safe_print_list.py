@@ -14,7 +14,7 @@ def safe_print_list(my_list=[], x=0):
     amount_of_elements_printed = 0
     for index in range(x):
         try:
-            print(my_list[index])
+            print(my_list[index], end="")
         except IndexError:
             # ALWAYS put an exception here,
             # otherwise KeyboardInterrupts will not work
