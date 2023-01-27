@@ -6,4 +6,4 @@
 ## Exercises Directory And Their Learning Objectives
 0. Handle IndexError when accessing a list with an index out of its range
 - bare except in Python
-
+- Python else after loop
