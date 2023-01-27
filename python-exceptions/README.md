@@ -10,3 +10,4 @@
 - Python else after loop
 1. Handle ValueError and TypeError when trying to print integer with an integer formatter without using 'type'
 - see above
+2. Handle ValueError, TypeError and IndexError similarly to exercise 1, but IndexError being handled differently, in a different code block
