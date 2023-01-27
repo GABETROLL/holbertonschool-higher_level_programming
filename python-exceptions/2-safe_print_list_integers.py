@@ -9,6 +9,8 @@ def safe_print_list_integers(my_list=[], x=0):
     Any element in 'my_list' that's not an
     integer is skipped and isn't accounted for
     'x'.
+    If no elements were printed, then no new line
+    is printed either.
     """
     integers_printed = 0
 
@@ -25,5 +27,9 @@ def safe_print_list_integers(my_list=[], x=0):
         # not count it as printed.
         # the code below runs if it was fully successful.
         integers_printed += 1
-    print()
+
+    if integers_printed:
+        # if nothing was printed,
+        # a new line isn't allowed.
+        print()
     return integers_printed
