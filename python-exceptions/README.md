@@ -8,5 +8,5 @@
 - list IndexError
 - bare except in Python
 - Python else after loop
-1. Handle ValueError when trying to print integer with an integer formatter without using 'type'
+1. Handle ValueError and TypeError when trying to print integer with an integer formatter without using 'type'
 - see above

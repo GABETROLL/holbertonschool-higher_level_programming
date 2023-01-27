@@ -10,6 +10,9 @@ def safe_print_integer(value):
     """
     try:
         print("{:d}".format(value))
-    except ValueError:
+    except TypeError, ValueError:
+        # 'format' raises TypeError for NoneType,
+        # tuple and list types, but ValueError
+        # when given a string
         return False
     return True
