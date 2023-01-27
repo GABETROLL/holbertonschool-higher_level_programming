@@ -3,9 +3,9 @@
 
 def complex_delete(a_dictionary, value):
     """
-    Creates a copy of 'a_dictionary' with
-    all key-value pairs that DON'T contain the value
-    'value',
+    Deletes all key-value pairs in 'a_dictionary'
+    that contain the value 'value' IN PLACE,
+    then returns 'a_dictionary'.
 
     assuming that the a_dictionary has
     obj[key] -> value functionality.
@@ -19,5 +19,7 @@ def complex_delete(a_dictionary, value):
     # Tuples just so happen to run faster and take less
     # memory than lists here, as I only need to copy the
     # values, and not modify them like in a list.
-
-    return {k: v for k, v in a_dictionary.items() if v != value}
+    for old_key, old_value in tuple(a_dictionary.items()):
+        if old_value == value:
+            del a_dictionary[old_key]
+    return a_dictionary

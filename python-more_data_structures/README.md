@@ -44,6 +44,11 @@ These are all of the exercises' objectives, along with phrases you can look up i
 101. Make a copy of a matrix with all its items squared with 'map', NO loops and in just 3 lines
 - see exercise 0
 - Python 'map' and lambda
-102. Make a copy of a dictionary with all its key-value pairs that don't contain a certain value
-- Python dictionary comprehensions
-- Also see: Python filter
+102. Delete every key-value pair in a dictionary that contain a certain value
+IMPORTANT:
+- python dictionary changed size during iteration
+- https://stackoverflow.com/questions/11941817/how-to-avoid-runtimeerror-dictionary-changed-size-during-iteration-error
+
+- Python dict.iter
+- Python KeysView
+- https://docs.python.org/3/library/stdtypes.html#dict-views
