@@ -3,7 +3,9 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     """
-    Prints the first 'x' integers in 'my_list'.
+    Prints the first 'x' integers in 'my_list'
+    without any separation, in the same line,
+    then a new line.
     Any element in 'my_list' that's not an
     integer is skipped and isn't accounted for
     'x'.
@@ -12,7 +14,7 @@ def safe_print_list_integers(my_list=[], x=0):
 
     for index in range(x):
         try:
-            print("{:d}".format(my_list[index]))
+            print("{:d}".format(my_list[index]), end="")
         except IndexError:
             break
         except (ValueError, TypeError) as error:
