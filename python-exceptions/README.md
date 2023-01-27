@@ -5,5 +5,8 @@
 [Avoid bare except in Python](https://www.30secondsofcode.org/articles/s/python-bare-except)
 ## Exercises Directory And Their Learning Objectives
 0. Handle IndexError when accessing a list with an index out of its range
+- list IndexError
 - bare except in Python
 - Python else after loop
+1. Handle ValueError when trying to print integer with an integer formatter without using 'type'
+- see above
