@@ -25,4 +25,5 @@ def safe_print_list_integers(my_list=[], x=0):
         # not count it as printed.
         # the code below runs if it was fully successful.
         integers_printed += 1
+    print()
     return integers_printed
