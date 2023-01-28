@@ -21,3 +21,6 @@
 - [Python Raise an Exception - W3Schools](https://www.w3schools.com/python/gloss_python_raise.asp)
 6. Raise an exception with an error message.
 - see exercise 5
+## Advanced Tasks
+100. Try to print an integer, and print an error message to the stderr if it fails
+
