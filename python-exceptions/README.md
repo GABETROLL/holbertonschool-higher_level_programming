@@ -23,4 +23,5 @@
 - see exercise 5
 ## Advanced Tasks
 100. Try to print an integer, and print an error message to the stderr if it fails
-
+101. Try to call a function with provided args, and handle all exceptions derived from 'Exception'
+- Python unpacking
