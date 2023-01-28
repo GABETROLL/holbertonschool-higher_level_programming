@@ -16,4 +16,5 @@
 - [Defining Clean-up Actions in Python's website](https://docs.python.org/3/tutorial/errors.html) (scroll down to section 8.7)
 4. Handle several errors at once using multiple 'except' blocks, and using 'try' and 'finally'.
 - see previous exercises
+5. Raise an exception
 
