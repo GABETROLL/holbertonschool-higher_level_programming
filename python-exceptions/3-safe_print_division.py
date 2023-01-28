@@ -3,7 +3,8 @@
 
 def safe_print_division(a, b):
     """
-    Prints and returns 'a / b'.
+    Prints "Inside result:" followed by
+    'a / b', then returns 'a / b'.
     If 'a / b' causes a ZeroDivisionError,
     this function prints None and returns
     None.
@@ -15,10 +16,10 @@ def safe_print_division(a, b):
     try:
         value = a / b
     except ZeroDivisionError:
-        value = None
+        pass
     finally:
         # always runs, even when an exception
         # occurs, which in that case, it runs
         # before exiting.
-        print("{}".format(value))
+        print("Inside result: {}".format(value))
     return value
