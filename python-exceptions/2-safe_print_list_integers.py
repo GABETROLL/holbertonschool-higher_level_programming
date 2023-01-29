@@ -7,7 +7,7 @@ def safe_print_list_integers(my_list=[], x=0):
     without any separation, in the same line,
     then a new line.
     Any element in 'my_list' that's not an
-    integer is skipped and isn't accounted for
+    integer is skipped BUT STILL IS accounted for
     'x'.
     If no elements were printed, then no new line
     is printed either.
@@ -20,12 +20,7 @@ def safe_print_list_integers(my_list=[], x=0):
         except IndexError:
             break
         except (ValueError, TypeError) as error:
-            continue
-        # if the index is out of range,
-        # the printing is over, so, we have to break.
-        # Unlike the type being wrong, which we just have to
-        # not count it as printed.
-        # the code below runs if it was fully successful.
+            pass
         integers_printed += 1
 
     if integers_printed:
