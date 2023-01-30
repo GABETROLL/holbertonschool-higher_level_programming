@@ -6,3 +6,4 @@
 3. How to create a class with a public method, that uses a private attribute
 4. How to create a getter and setter for a private instance attribute of a class
 5. How to create a method that prints the object
+6. Same as #5, but with a new private attribute
