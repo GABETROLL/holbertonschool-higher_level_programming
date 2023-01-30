@@ -47,4 +47,4 @@ class Square:
         Prints 'self' as a square of "#"
         with sides of length 'self.size'.
         """
-        print(("#" * self.size for _ in range(self.size)), sep="\n")
+        print(*("#" * self.size for _ in range(self.size)), sep="\n")
