@@ -73,6 +73,6 @@ class Square:
         vertical padding and 'self.position[0]'
         spaces of left padding before the "#"'s.
         """
-        print("\n" * self.positioj[1], end="")
+        print("\n" * self.position[1], end="")
         print(*(" " * self.position[0] + \
                 "#" * self.size for _ in range(self.size)), sep="\n")
