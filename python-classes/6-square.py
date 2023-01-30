@@ -49,8 +49,11 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if type(value) != tuple or len(value) != 2 \
-                or value[0] < 0 or value[1] < 0:
+        if type(value) != tuple or \
+        len(value) != 2 or \
+        type(value[0]) != int or \
+                type(value[1]) != int or \
+                value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -70,6 +73,6 @@ class Square:
         vertical padding and 'self.position[0]'
         spaces of left padding before the "#"'s.
         """
-        print("\n" * self.position[1],
-                *(" " * self.position[0] + \
-                        "#" * self.size for _ in range(self.size)), sep="\n")
+        print("\n" * self.positioj[1], end="")
+        print(*(" " * self.position[0] + \
+                "#" * self.size for _ in range(self.size)), sep="\n")
