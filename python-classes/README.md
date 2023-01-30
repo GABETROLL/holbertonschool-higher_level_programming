@@ -1,4 +1,5 @@
 # Python Classes
+These exercises are meant to be used for learning in the order of their numbers. God bless you!
 ## Exercises
 0. How to create an "empty" class
 1. How to create a class with a private attribute
