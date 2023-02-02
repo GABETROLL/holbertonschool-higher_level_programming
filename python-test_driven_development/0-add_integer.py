@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Zeroth exercise for PyDoc
+"""
 
 
 def add_integer(a, b=98):
