@@ -10,7 +10,7 @@ def say_my_name(first_name, last_name=""):
     Makes the person with the first name
     'first_name' and the last name 'last_name'
     introduce themselves like this:
-    
+
     "My name is <first_name> <last_name>",
     followed by a new line.
 
