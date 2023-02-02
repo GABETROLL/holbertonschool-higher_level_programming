@@ -17,7 +17,7 @@ Use cases:
     107
     >>> add_integer(3, 0.14159)
     3
-    >>> add_integer(0. 0.9999)
+    >>> add_integer(0, 0.9999)
     0
     >>> add_integer(5.0, 6.0)
     11
