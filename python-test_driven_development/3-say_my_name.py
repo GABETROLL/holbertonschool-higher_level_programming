@@ -16,9 +16,15 @@ def say_my_name(first_name, last_name=""):
 
     Unless 'first_name' or 'last_name' isn't
     a string.
+
+    If 'last_name' is empty or left default,
+    it's treated as a space.
     """
     if type(first_name) != str:
         raise TypeError("first_name must be a string")
     if type(last_name) != str:
         raise TypeError("last_name must be a string")
+
+    if not last_name:
+        last_name = " "
     print(f"My name is {first_name} {last_name}")
