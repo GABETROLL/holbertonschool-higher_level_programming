@@ -1,0 +1,25 @@
+The ``0-add_integer`` module
+==========================
+
+Using ``add_integer``
+---------------------
+
+Import ``add_integer`` from the ``0-add_integer`` module.
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Use cases:
+    >>> add_integer(5, 5)
+    10
+    >>> add_integer(5.0, 6.0)
+    11
+    >>> add_integer(3.14159, 3)
+    6
+    >>> add_integer(0.1, 0.2)
+    0
+    >>> add_integer(-98)
+    0
+    >>> add_integer("a")
+    TypeError: a must be an integer
+    >>> add_integer(3, "mong")
+    TypeError: b must be an integer
