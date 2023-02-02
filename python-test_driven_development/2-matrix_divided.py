@@ -19,8 +19,11 @@ def matrix_divided(matrix, div):
     If 'div' is '0',
     ZeroDivisionError is raised.
     """
+    INVALID_MATRIX_ERORR_MESSAGE = "matrix must be a matrix \
+        (list of lists) of integers/floats"
+
     if type(matrix) != list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(INVALID_MATRIX_ERORR_MESSAGE)
     if not (type(div) in (int, float)):
         raise TypeError("div must be a number")
     if div == 0:
@@ -30,7 +33,7 @@ def matrix_divided(matrix, div):
 
     for row in matrix:
         if type(row) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(INVALID_MATRIX_ERORR_MESSAGE)
 
         if result and len(row) != len(result[-1]):
             raise TypeError("Each row of the matrix must have the same size")
@@ -39,7 +42,7 @@ def matrix_divided(matrix, div):
 
         for x in row:
             if not (type(x) in (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(INVALID_MATRIX_ERORR_MESSAGE)
             new_row.append(round(x / div), 2)
         result.append(new_row)
 
