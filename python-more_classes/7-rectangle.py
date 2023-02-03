@@ -2,7 +2,7 @@
 """
 Exercise 7: Copy 'Rectangle' class from
 exercise 6 and make a public class attribute
-in it that "contains" the string
+in it with its string being the string
 that makes up the "blocks" for the rectangle's string
 representation.
 """
@@ -95,7 +95,7 @@ class Rectangle:
         """
         if not self.width or not self.height:
             return ""
-        line = self.print_symbol * self.width
+        line = str(self.print_symbol) * self.width
         return "\n".join(line for _ in range(self.height))
 
     def __repr__(self):
