@@ -9,3 +9,4 @@
 6. Counting how many instances of a class exist at run-time
 7. Adding another class variable with anything in it
 8. Adding a static method that compares two instances of the class
+9. Adding a class method that returns a new instance of the class, as a child of the original class, or the original class.
