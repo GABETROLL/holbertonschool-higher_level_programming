@@ -68,7 +68,7 @@ class Rectangle:
         if not self.__width or not self.__height:
             return 0
         return self.__width * 2 + self.__height * 2
-    
+
     def __str__(self):
         """
         Returns a 'self.width' * 'self.height'
