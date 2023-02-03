@@ -113,4 +113,4 @@ class Rectangle:
         to indicate that one less 'Rectangle' exists.
         """
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        self.number_of_instances -= 1
