@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Exercise 9: Copy 'Rectangle' class from
-exercise 8 and make a class method that
-returns a new square with a size.
+Exercise 8: Copy 'Rectangle' class from
+exercise 7 and make a static method that
+returns the rectangle with the bigger area.
 """
 
 
@@ -76,16 +76,6 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
 
         return rect_1 if rect_1.area() >= rect_2.area() else rect_2
-
-    @classmethod
-    def square(cls, size):
-        """
-        Returns a 'cls' (hopefully based in
-        'Rectangle') instance with
-        its width being equal to 'size' and its
-        height being equal to 'size'.
-        """
-        return cls(size, size)
 
     def area(self):
         """
