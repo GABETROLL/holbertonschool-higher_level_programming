@@ -95,7 +95,7 @@ class Rectangle:
         """
         if not self.width or not self.height:
             return ""
-        line = Rectangle.print_symbol * self.width
+        line = self.print_symbol * self.width
         return "\n".join(line for _ in range(self.height))
 
     def __repr__(self):
@@ -113,4 +113,4 @@ class Rectangle:
         to indicate that one less 'Rectangle' exists.
         """
         print("Bye rectangle...")
-        self.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
