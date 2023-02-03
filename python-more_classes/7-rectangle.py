@@ -95,7 +95,7 @@ class Rectangle:
         """
         if not self.width or not self.height:
             return ""
-        line = "#" * self.width
+        line = Rectangle.print_symbol * self.width
         return "\n".join(line for _ in range(self.height))
 
     def __repr__(self):
