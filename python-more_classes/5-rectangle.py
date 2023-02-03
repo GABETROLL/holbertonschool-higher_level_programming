@@ -87,7 +87,7 @@ class Rectangle:
         with 'eval'.
         """
         return f"Rectangle({self.width}, {self.height})"
-    
+
     def __del__(self):
         """
         Prints "Bye rectangle..." when 'self'
