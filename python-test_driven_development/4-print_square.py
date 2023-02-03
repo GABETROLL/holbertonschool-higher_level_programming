@@ -8,7 +8,7 @@ def print_square(size):
     """
     Prints a 'size' * 'size' square
     made of "#"'s to the standard output.
-    
+
     Unless 'size' isn't an integer or is
     lower than zero."""
     if type(size) != int:
