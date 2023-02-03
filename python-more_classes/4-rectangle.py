@@ -83,7 +83,7 @@ class Rectangle:
             return ""
         line = "#" * self.width
         return "\n".join(line for _ in range(self.height))
-    
+
     def __repr__(self):
         """
         Returns the syntax to construct 'self'
