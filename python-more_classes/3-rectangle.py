@@ -75,4 +75,5 @@ class Rectangle:
         rectangle string made with "#"'s and new
         lines.
         """
-        return ("#" * self.width + "\n") * self.height
+        line = "#" * self.width
+        return "\n".join(line for _ in range(self.height))
