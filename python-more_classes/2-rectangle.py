@@ -59,5 +59,10 @@ class Rectangle:
         Returns this recangle's perimeter
         according to euclidian geometry, based
         in 'self.__width' and 'self.__height'.
+
+        If 'self.__width' or 'self.__height' are
+        0, this function returns 0.
         """
+        if not self.__width or not self.__height:
+            return 0
         return self.__width * 2 + self.__height * 2
