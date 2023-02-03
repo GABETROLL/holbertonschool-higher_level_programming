@@ -8,3 +8,4 @@
 5. Defining what happens when an object is deleted
 6. Counting how many instances of a class exist at run-time
 7. Adding another class variable with anything in it
+8. Adding a static method that compares two instances of the class
