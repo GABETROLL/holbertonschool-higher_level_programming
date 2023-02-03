@@ -6,3 +6,4 @@
 3. Making a class with a "unofficial" string representation for its objects
 4. Making a class with an "official" string representation for making a new instance of it with 'eval'
 5. Defining what happens when an object is deleted
+6. Counting how many instances of a class exist at run-time
