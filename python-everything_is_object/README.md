@@ -1,6 +1,6 @@
 # Everything In Python is an Object
 ## FAQ on how mutable and immutable values behave in Python
-Each one of these questions has its answer in a file with the question number followed by "-answer.txt". Feel free to experiment in the Python console and check all the answers! But try to igure them out in you head first before opening the answer files.
+Each one of these questions has its answer in a file with the question number followed by "-answer.txt" (except for the 19th exercise). Feel free to experiment in the Python console and check all the answers! But try to igure them out in you head first before opening the answer files.
 
 ALL OF THE FOLLOWING QUESTIONS ARE FROM HOLBERTON
 0. What function would you use to print the type of an object?
