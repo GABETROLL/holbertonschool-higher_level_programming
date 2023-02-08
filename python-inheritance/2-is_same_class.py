@@ -7,7 +7,7 @@ otherwise, False.
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     Returns True if 'obj' is an instance
     of the EXACT class 'a_class', AND NOT OF
