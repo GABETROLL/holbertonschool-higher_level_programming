@@ -36,4 +36,28 @@ Use cases:
     >>> j = MyList([])
     >>> k = MyList("God loves you, surrender to him.")
     >>> l = MyList({"a": 1, "b": 2})
-    >>> m = MyList({0, 1, 2, 3})
+    >>> m = MyList({0, 2, 3})
+
+    >>> m.append()
+    Traceback (most recent call last):
+    ...
+    TypeError: append() takes exactly one argument (0 given)
+    >>> m.append(4)
+    >>> m.print_sorted()
+    [0, 2, 3, 4]
+    [0, 2, 3, 4]
+    >>> m.append(1)
+    >>> m.print_sorted()
+    [0, 1, 2, 3, 4]
+    [0, 1, 2, 3, 4]
+    >>> m.append(-1)
+    [-1, 0, 1, 2, 3, 4]
+    [-1, 0, 1, 2, 3, 4]
+    >>> h.print_sorted()
+    []
+    []
+    >>> n = m.print_sorted()
+    [-1, 0, 1, 2, 3, 4]
+    [-1, 0, 1, 2, 3, 4]
+    >>> n
+    [-1, 0, 1, 2, 3, 4]

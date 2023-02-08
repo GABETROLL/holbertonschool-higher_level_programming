@@ -17,4 +17,6 @@ class MyList(list):
         by creating a new 'list' of 'self'
         using 'sorted', then printing that.
         """
-        print(sorted(self))
+        result = sorted(self)
+        print(result)
+        return result
