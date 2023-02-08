@@ -11,4 +11,4 @@ class BaseGeometry:
     Class with an abstract method 'area'
     """
     def area(self):
-        raise NotImplementedError
+        raise NotImplementedError("area() is not implemented")
