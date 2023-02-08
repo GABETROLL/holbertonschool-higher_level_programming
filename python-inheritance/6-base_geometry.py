@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Exercise 6: make the 'BaseGeometry' class
-from exercise 5 and add an 'area' method to
+in exercise 5 and add an 'area' method to
 it.
 """
 
