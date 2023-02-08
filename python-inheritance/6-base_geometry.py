@@ -8,7 +8,8 @@ it.
 
 class BaseGeometry:
     """
-    Class with an abstract method 'area'
+    Class with an abstract (I'm guessing)
+    method 'area'
     """
     def area(self):
-        raise NotImplementedError("area() is not implemented")
+        raise Exception("area() is not implemented")
