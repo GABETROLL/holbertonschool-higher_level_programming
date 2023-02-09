@@ -1,0 +1,49 @@
+The ``7-base_geometry`` module
+==============================
+
+Using ``7-base_geometry``
+-------------------------
+
+First, import the ``MyListBaseGeometry`` class from ``7-base_geometry``.
+
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+Then, make the instance:
+
+    >>> base_geometry = BaseGeometry()
+
+Use cases:
+    >>> base_geometry.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    >>> base_geometry.integer_validator(complex(3, 0.14159))
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+    >>> base_geometry.integer_validator("God loves you!!!")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+    >>> base_geometry.integer_validator(float("inf"), None)
+    Traceback (most recent call last):
+    ...
+    TypeError: inf must be an integer
+    >>> base_geometry.integer_validator("Michael", BaseException)
+    Traceback (most recent call last):
+    ...
+    TypeError: Michael must be an integer
+    >>> base_geometry.integer_validator(object(), 3)
+    >>> base_geometry.integer_validator("distance", -5.0)
+    Traceback (most recent call last):
+    ...
+    TypeError: distance must be an integer
+    >>> base_geometry.integer_validator("distance", -1)
+    Traceback (most recent call last):
+    ...
+    ValueError: distance must be greater than 0
+    >>> base_geometry.integer_validator("distance", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: distance must be greater than 0
+    >>> base_geometry.integer_validator("distance", 10)
