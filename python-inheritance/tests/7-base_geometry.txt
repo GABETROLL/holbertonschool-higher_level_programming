@@ -38,6 +38,22 @@ Use cases:
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
+    >>> base_geometry.integer_validator("distance", (34,))
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+    >>> base_geometry.integer_validator("distance", [1])
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+    >>> base_geometry.integer_validator("distance", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+    >>> base_geometry.integer_validator("distance", {50, 100})
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
     >>> base_geometry.integer_validator("distance", -5.0)
     Traceback (most recent call last):
     ...
