@@ -47,6 +47,9 @@ Use cases:
     ...
     TypeError: age must be an integer
     >>> base_geometry.integer_validator("age", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
     >>> base_geometry.integer_validator("age", {50, 100})
     Traceback (most recent call last):
     ...
