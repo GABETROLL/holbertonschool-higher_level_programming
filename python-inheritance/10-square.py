@@ -16,3 +16,11 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         self.__width = size
         self.__height = size
+
+    def area(self):
+        """
+        Returns the area of 'self'
+        according to Geometry's formula
+        for a square.
+        """
+        return self.__width * self.__height
