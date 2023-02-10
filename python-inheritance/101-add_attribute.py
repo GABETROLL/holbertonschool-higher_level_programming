@@ -11,7 +11,4 @@ def add_attribute(object, name, value):
     the value 'value' to the object
     'object'.
     """
-    try:
-        object.__setattr__(name, value)
-    except AttributeError:
-        raise TypeError("can't add new attribute")
+    pass

@@ -14,4 +14,4 @@
 10. Based on the class in exercise 9, make a 'Square' class
 *skip a few :)*
 100. Make an 'int' child class with its operators swapped (!!! gasp)
-101. Make a function that adds a new attribute to an object if possible
+101. Make a function that adds a new attribute to an object if possible, without using try/except
