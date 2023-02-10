@@ -14,4 +14,4 @@ def add_attribute(object, name, value):
     try:
         object.__setattr__(name, value)
     except AttributeError:
-        raise TypeError("[TypeError] can't add new attribute")
+        raise TypeError("can't add new attribute")
