@@ -17,10 +17,14 @@ def write_file(filename="", text=""):
     this function empties it and writes the
     contents of 'text' into it instead.
 
+    This function returns the result of the
+    built-in 'write' method that writes
+    to the file.
+
     (name
     always works like the first exercise,
     unless something in the code is done
     differently)
     """
     with open(filename, "w") as file:
-        file.write(text)
+        return file.write(text)
