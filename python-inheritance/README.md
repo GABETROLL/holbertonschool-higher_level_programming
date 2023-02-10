@@ -12,3 +12,5 @@
 8. Make a class called 'Rectangle' that inherits from the class 'BaseGeometry' in exercise 7, just as a rectangle in math
 9. Make a class like the one in exercise 8, but with its own string representation
 10. Based on the class in exercise 9, make a 'Square' class
+*skip a few :)*
+100. Make an 'int' child class with its operators swapped (!!! gasp)
