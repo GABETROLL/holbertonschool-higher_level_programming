@@ -15,5 +15,5 @@ def read_file(filename=""):
     The name is relative to
     the current working dierctory.
     """
-    with open(filename, "r", encoding="UTF-8") as file:
+    with open(filename, "r") as file:
         print(file.read(), end="")
