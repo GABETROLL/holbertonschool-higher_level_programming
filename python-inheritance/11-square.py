@@ -17,5 +17,13 @@ class Square(Rectangle):
         self.__width = size
         self.__height = size
 
+    def area(self):
+        """
+        Returns the area of 'self'
+        according to Geometry's formula
+        for a square.
+        """
+        return self.__width * self.__height
+
     def __str__(self):
         return f"[Square] {self.__width}/{self.__height}"
