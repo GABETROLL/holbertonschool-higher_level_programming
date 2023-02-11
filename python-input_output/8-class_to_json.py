@@ -3,7 +3,6 @@
 Exercise 8: convert any object, assuming of its
 attributes are serializable, into a JSON string.
 """
-from json import dumps
 
 
 def class_to_json(obj):
@@ -12,4 +11,4 @@ def class_to_json(obj):
     'obj', assuming that all of its attributes
     are serializable.
     """
-    return dumps(obj.__dict__)
+    return str(obj.__dict__)
