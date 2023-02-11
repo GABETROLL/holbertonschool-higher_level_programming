@@ -6,3 +6,4 @@ Using the built-in called 'open':
 1. Write text to a file by overriding the contents of that file, and creating that file if it doesn't exist
 2. Append text to a file by writing after the end of the file's contents, an dcreating the file if it doesn't exist
 3. Get the JSON string representation of an object
+4. Get the object form of a JSON string
