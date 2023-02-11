@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 Exercise 7: Make a script that adds all
-arguments to a Python list, and then saves the
-list to a JSON file called "add_item.json",
+arguments to a Python list (except this script's name),
+and then saves the list to a JSON file called "add_item.json",
 in its JSON form.
 """
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
@@ -14,4 +14,4 @@ if __name__ == "__main__":
     # says: "adds all arguments to a Python list"
     # (I think???) But, the list is created.
 
-    save_to_json_file(argv, "add_item.json")
+    save_to_json_file(argv[1:], "add_item.json")
