@@ -14,10 +14,9 @@ def load_from_json_file(filename):
     file parameter in its Python object
     form.
 
-    Uses 'json.load' to load the object,
-    so if the object's format is wrong,
-    this function should take care of it,
-    but I don't know what happens next...
+    Please read documentation for the 'dump'
+    function and when it raises exceptions:
+    https://docs.python.org/3/library/json.html
 
     If an error occurs while calling
     'load', the file automatically closes

@@ -12,6 +12,10 @@ def save_to_json_file(my_obj, filename):
     'my_obj' to the JSON file argument
     called 'filename' in its JSON form.
 
+    Please read documentation for the 'dump'
+    function and when it raises exceptions:
+    https://docs.python.org/3/library/json.html
+
     Uses the 'with' statement to automatically
     close the file if an error occurs while
     writing to itm followed by actually raising

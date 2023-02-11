@@ -7,3 +7,5 @@ Using the built-in called 'open':
 2. Append text to a file by writing after the end of the file's contents, an dcreating the file if it doesn't exist
 3. Get the JSON string representation of an object
 4. Get the object form of a JSON string
+5. Write the JSON representation of an object to a file
+6. Load the Python object form of a JSON string from a file
