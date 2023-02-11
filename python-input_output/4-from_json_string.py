@@ -15,4 +15,4 @@ def from_json_string(my_str):
     I don't know what happens when
     the string's ormat is invalid...
     """
-    loads(my_str)
+    return loads(my_str)
