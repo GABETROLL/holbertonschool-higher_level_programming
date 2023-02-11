@@ -3,16 +3,16 @@
 Exercise 4: make a function that returns
 an object from a JSON string.
 """
-from json import load
+from json import loads
 
 
 def from_json_string(my_str):
     """
     Returns the object form of the
     'my_str' string, using
-    'json.load'.
+    'json.loads'.
 
     I don't know what happens when
     the string's ormat is invalid...
     """
-    load(my_str)
+    loads(my_str)
