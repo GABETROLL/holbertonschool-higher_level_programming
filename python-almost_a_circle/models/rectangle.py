@@ -88,6 +88,24 @@ class Rectangle(Base):
         result += f" - {self.width}/{self.height}"
         return result
 
+    def update(self, *args):
+        """
+        Updates all of 'self's attributes like this:
+        arg0 -> id
+        arg1 -> width
+        arg2 -> height
+        arg3 -> x
+        arg4 -> y
+        """
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            pass
+
     def area(self):
         """
         Returns what the area of 'self' is,
