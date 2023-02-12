@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Exercise 0: Make a class called 'Base'.
+Make a class called 'Base'.
 """
 
 
