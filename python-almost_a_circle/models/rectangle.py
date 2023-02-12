@@ -90,3 +90,11 @@ class Rectangle(Base):
         'self.__width' and 'self.__height'.
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+        Prints a rectangle to the standard output
+        using "#" as blocks, corresponding to
+        'self.__width' and 'self.__height'.
+        """
+        print(("#" * self.__width + "\n") * self.__height)
