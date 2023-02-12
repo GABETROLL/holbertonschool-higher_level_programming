@@ -105,5 +105,4 @@ class Rectangle(Base):
         print("\n" * self.y, end="")
 
         for _ in range(self.height):
-            print(" " * self.x)
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
