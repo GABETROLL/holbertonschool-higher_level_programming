@@ -5,7 +5,7 @@ the 'Base' class in 'base.py' in this folder,
 with a width, a height, an x and a y
 protected attribute.
 """
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
