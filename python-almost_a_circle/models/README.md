@@ -1,2 +1,2 @@
-# 'Models' folder with a base class called 'Base'
-(no, you should never name a class 'Base', that's very vague...)
+# A 'Rectangle' class that inherits from a 'Base' class
+Both of them use 'id attributes.
