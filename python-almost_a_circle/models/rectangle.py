@@ -102,4 +102,8 @@ class Rectangle(Base):
         using "#" as blocks, corresponding to
         'self.__width' and 'self.__height'.
         """
-        print(("#" * self.width + "\n") * self.height, end="")
+        print("\n" * self.y, end="")
+
+        for _ in range(self.height):
+            print(" " * self.x)
+            print("#" * self.width)
