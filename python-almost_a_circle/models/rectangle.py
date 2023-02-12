@@ -88,7 +88,7 @@ class Rectangle(Base):
         result += f" - {self.width}/{self.height}"
         return result
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Updates all of 'self's attributes like this:
         arg0 -> id
@@ -97,14 +97,18 @@ class Rectangle(Base):
         arg3 -> x
         arg4 -> y
         """
-        try:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
-        except IndexError:
-            pass
+        if args:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except IndexError:
+                pass
+        else:
+            for name, value in kwargs.items():
+                self.__setattr__(name, value)
 
     def area(self):
         """
