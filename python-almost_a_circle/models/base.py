@@ -28,7 +28,7 @@ class Base:
             self.id = id
     
     @classmethod
-    def save_to_file(cls, list_objs):
+    def save_to_file(cls: type, list_objs):
         """
         Assumes that 'list_objs' is a list
         of instances of any class THAT INHERITS
@@ -46,7 +46,7 @@ class Base:
         if list_objs is None:
             list_objs = []
 
-        with open(f"{cls}.json", "w") as file:
+        with open(f"{cls.__name__}.json", "w") as file:
             file.write(Base.to_json_string(list_objs))
 
     @staticmethod
