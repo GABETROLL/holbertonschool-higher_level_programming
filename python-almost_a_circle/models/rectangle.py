@@ -93,7 +93,8 @@ class Rectangle(Base):
         Returns the dictionary representation of all of
         self's attributes (name: value)
         """
-        return self.__dict__
+        return {"id": self.id, "width": self.width, "height": self.height,
+                "x": self.x, "y": self.y}
 
     def update(self, *args, **kwargs):
         """
