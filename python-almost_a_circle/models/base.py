@@ -2,7 +2,7 @@
 """
 Make a class called 'Base'.
 """
-from json import dumps
+from json import dumps, loads
 
 
 class Base:
@@ -61,3 +61,16 @@ class Base:
         if list_dictionaries is None:
             return "[]"
         return dumps(list_dictionaries)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returns the list representation of
+        the 'json_string' JSON string.
+
+        If 'json_string' is None or empty,
+        an empty list is returned.
+        """
+        if json_string is None:
+            return []
+        return loads(json_string)
