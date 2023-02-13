@@ -2,7 +2,7 @@
 """
 Make a class called 'Base'.
 """
-from json import dumps
+from json import dump, dumps
 
 
 class Base:
@@ -26,6 +26,28 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+    
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """
+        Assumes that 'list_objs' is a list
+        of instances of any class THAT INHERITS
+        FROM THIS ONE ('Base'), or 'None'.
+        If 'list_objs' is None, it's treated as
+        '[]'.
+
+        Assumes that 'cls' is a class that inherits
+        from this one ('Base').
+
+        Saves the JSON representation of 'list_objs'
+        to a file called f"{cls}.json". If the file
+        already exists, it's overriden.
+        """
+        if list_objs is None:
+            list_objs = []
+        
+        with open(f"{cls}.json", "w") as file:
+            dump(list_objs, file)
 
     @staticmethod
     def to_json_string(list_dictionaries):
