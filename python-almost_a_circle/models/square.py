@@ -28,20 +28,30 @@ class Square(Rectangle):
     
     def update(self, *args, **kwargs):
         """
-        Updates all of 'self's attributes like this:
+        If there are no 'args' present,
+        they are skipped, and the 'kwargs'
+        are used to set 'self's attributes.
+
+        Otherwise, this method updates all
+        of 'self's attributes like this:
         args[0] -> id
         args[1] -> size
         args[2] -> x
         args[3] -> y
+        and skips 'kwargs' instead.
         """
-        try:
-            self.id = args[0]
-            self.size = args[1]
-            self.x = args[2]
-            self.y = args[3]
-        except IndexError:
-            # all the args may not be there
-            pass
+        if args:
+            try:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[3]
+            except IndexError:
+                # all the args may not be there
+                pass
+        else:
+            for name, value in kwargs.items():
+                self.__setattr__(name, value)
 
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
