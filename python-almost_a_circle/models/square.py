@@ -25,6 +25,23 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+    
+    def update(self, *args, **kwargs):
+        """
+        Updates all of 'self's attributes like this:
+        args[0] -> id
+        args[1] -> size
+        args[2] -> x
+        args[3] -> y
+        """
+        try:
+            self.id = args[0]
+            self.size = args[1]
+            self.x = args[2]
+            self.y = args[3]
+        except IndexError:
+            # all the args may not be there
+            pass
 
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
