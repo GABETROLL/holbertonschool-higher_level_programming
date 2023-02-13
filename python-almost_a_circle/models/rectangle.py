@@ -98,12 +98,17 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        Updates all of 'self's attributes like this:
-        arg0 -> id
-        arg1 -> width
-        arg2 -> height
-        arg3 -> x
-        arg4 -> y
+        If there are no 'args' present,
+        they are skipped, and the 'kwargs'
+        are used to set 'self's attributes.
+
+        Otherwise, this method updates all
+        of 'self's attributes like this:
+        args[0] -> id
+        args[1] -> size
+        args[2] -> x
+        args[3] -> y
+        and skips 'kwargs' instead.
         """
         if args:
             try:
@@ -113,6 +118,7 @@ class Rectangle(Base):
                 self.x = args[3]
                 self.y = args[4]
             except IndexError:
+                # all of the attributes may not be there
                 pass
         else:
             for name, value in kwargs.items():
