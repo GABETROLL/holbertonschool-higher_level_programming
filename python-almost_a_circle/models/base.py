@@ -2,7 +2,7 @@
 """
 Make a class called 'Base'.
 """
-from json import dump, dumps
+from json import dumps
 
 
 class Base:
@@ -45,9 +45,9 @@ class Base:
         """
         if list_objs is None:
             list_objs = []
-        
+
         with open(f"{cls}.json", "w") as file:
-            dump(list_objs, file)
+            file.write(Base.to_json_string(list_objs))
 
     @staticmethod
     def to_json_string(list_dictionaries):
