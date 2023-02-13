@@ -26,7 +26,7 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
-    
+
     @classmethod
     def save_to_file(cls: type, list_objs):
         """
