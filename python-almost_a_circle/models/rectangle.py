@@ -88,6 +88,13 @@ class Rectangle(Base):
         result += f" - {self.width}/{self.height}"
         return result
 
+    def to_dictionary(self):
+        """
+        Returns the dictionary representation of all of
+        self's attributes (name: value)
+        """
+        return self.__dict__
+
     def update(self, *args, **kwargs):
         """
         Updates all of 'self's attributes like this:
