@@ -34,7 +34,8 @@ class Base:
         their instances into a dictoinary with
         an override of this method.
         """
-        raise NotImplementedError("'to_dictionary' isn't implemented in 'Base'")
+        raise NotImplementedError("'to_dictionary' isn't \
+implemented in 'Base'")
 
     @classmethod
     def save_to_file(cls, list_objs):
