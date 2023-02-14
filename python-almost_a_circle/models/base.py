@@ -28,7 +28,7 @@ class Base:
             self.id = id
 
     @classmethod
-    def save_to_file(cls: type, list_objs):
+    def save_to_file(cls, list_objs):
         """
         Assumes that 'list_objs' is a list
         of instances of any class THAT INHERITS
