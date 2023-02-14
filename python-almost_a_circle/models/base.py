@@ -49,6 +49,9 @@ implemented in 'Base'")
         Assumes that 'cls' is a class that inherits
         from this one ('Base').
 
+        The challenge of this method exercise is to use
+        'cls.to_json_string' instead of 'json.dump'.
+
         Saves the JSON representation of 'list_objs'
         to a file called f"{cls}.json". If the file
         already exists, it's overriden.
@@ -66,8 +69,17 @@ implemented in 'Base'")
         """
         Loads JSON object from file named
         f"{cls}.son".
+
+        If the file doesn't exist, this method
+        returns '[]'.
+
+        The challenge of this method exercise is to use
+        'cls.to_json_string' instead of 'json.load'.
         """
-        pass
+        result = []
+        with open(f"{cls.__name__}.json", "r") as file:
+            result = cls.from_json_string(file.read())
+        return result
 
     @staticmethod
     def to_json_string(list_dictionaries):
