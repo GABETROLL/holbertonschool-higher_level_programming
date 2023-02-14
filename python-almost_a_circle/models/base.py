@@ -37,6 +37,14 @@ class Base:
         raise NotImplementedError("'to_dictionary' isn't \
 implemented in 'Base'")
 
+    def update(self, *args, **kwargs):
+        """
+        For children of this class to update
+        their attributes using the 'args' and
+        'kwargs'.
+        """
+        raise NotImplementedError("'Base.update' isn't implemented.")
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
@@ -63,6 +71,10 @@ implemented in 'Base'")
 
         with open(f"{cls.__name__}.json", "w") as file:
             file.write(cls.to_json_string(list_objs))
+    
+    @classmethod
+    def create(cls, **dictionary):
+        pass
 
     @classmethod
     def load_from_file(cls):
@@ -74,7 +86,8 @@ implemented in 'Base'")
         returns '[]'.
 
         The challenge of this method exercise is to use
-        'cls.to_json_string' instead of 'json.load'.
+        'cls.to_json_string' and 'cls.create' instead of
+        'json.load'.
         """
         result = []
         with open(f"{cls.__name__}.json", "r") as file:
