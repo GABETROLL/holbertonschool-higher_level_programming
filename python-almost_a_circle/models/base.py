@@ -27,6 +27,15 @@ class Base:
         else:
             self.id = id
 
+    def to_dictionary(self):
+        """
+        All of the children of this class
+        should be JSON serializable by turning
+        their instances into a dictoinary with
+        an override of this method.
+        """
+        raise NotImplementedError("'to_dictionary' isn't implemented in 'Base'")
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
@@ -46,8 +55,18 @@ class Base:
         if list_objs is None:
             list_objs = []
 
+        list_objs = [obj.to_dictionary() for obj in list_objs]
+
         with open(f"{cls.__name__}.json", "w") as file:
-            file.write(Base.to_json_string(list_objs))
+            file.write(cls.to_json_string(list_objs))
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Loads JSON object from file named
+        f"{cls}.son".
+        """
+        pass
 
     @staticmethod
     def to_json_string(list_dictionaries):
