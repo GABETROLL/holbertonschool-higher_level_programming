@@ -71,7 +71,7 @@ implemented in 'Base'")
 
         with open(f"{cls.__name__}.json", "w") as file:
             file.write(cls.to_json_string(list_objs))
-    
+
     @classmethod
     def create(cls, **dictionary):
         pass
