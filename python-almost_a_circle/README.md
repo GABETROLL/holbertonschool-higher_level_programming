@@ -1,1 +1,1 @@
-# 'Models' folder with a 'Rectangle' class and a 'Base' class
+# 'Models' folder with a 'Square', 'Rectangle' and 'Base' class
