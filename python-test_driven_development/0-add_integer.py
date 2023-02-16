@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Zeroth exercise for PyDoc
+Zeroth exercise for doctest
 """
 
 
