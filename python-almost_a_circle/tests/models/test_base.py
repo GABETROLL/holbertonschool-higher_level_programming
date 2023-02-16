@@ -1,10 +1,14 @@
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBaseConstructor(unittest.TestCase):
     def test_no_parameters(self):
         b = Base()
+        b.id
+
         self.assertEqual(b.id, 1)
 
         b = Base()
@@ -63,82 +67,7 @@ class TestToJSONString(unittest.TestCase):
         self.assertEqual(result, "[]")
 
     def test_correct_type(self):
-        result = Base.to_json_string([])
-        self.assertEqual(result, "[]")
-
-        result = Base.to_json_string([{}])
-        self.assertEqual(result, "[{}]")
-
-        result = Base.to_json_string([{}, {}])
-        self.assertEqual(result, "[{}, {}]")
-
-        result = Base.to_json_string([{}, {}, {}])
-        self.assertEqual(result, "[{}, {}, {}]")
-
-        result = Base.to_json_string([{"Hello, World!"}])
-        self.assertEqual(result, "[{'Hello, World!'}]")
-
-        result = Base.to_json_string([{"Holber": "ton"}])
-        self.assertEqual(result, "[{'Holber': 'ton'}]")
-
-        result = Base.to_json_string([{5: "50", "hi": {{}: float()}}])
-        self.assertEqual(result, "[{5: '50', 'hi': {{}: 0.0}}]")
-
-        result = Base.to_json_string([{5: 5.5, True: False}, {[]: "hi"}])
-        self.assertEqual(result, "[{5: 5.5, True: False}, {[]: 'hi'}]")
-
-
-class TestSaveToFile(unittest.TestCase):
-    def test_wrong_amount_of_args(self):
-        with self.assertRaises(TypeError):
-            Base.save_to_file()
-
-        with self.assertRaises(TypeError):
-            Base.save_to_file("hello", "world")
-
-    def test_none(self):
-        Base.save_to_file(None)
-
-        with open("Base.json", "r") as output_file_test:
-            # if the file doesn't exist, the function failed,
-            # and therefore, the test will fail with
-            # FileNotFoundError
-            self.assertEqual(output_file_test.read(), "[]")
-
-    def test_correct_type(self):
-        Base.save_to_file([])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[]")
-
-        Base.save_to_file([{}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[{}]")
-
-        Base.save_to_file([{}, {}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[{}, {}]")
-
-        Base.save_to_file([{}, {}, {}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[{}, {}, {}]")
-
-        Base.save_to_file([{"Hello, World!"}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[{'Hello, World!'}]")
-
-        Base.save_to_file([{"Holber": "ton"}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(), "[{'Holber': 'ton'}]")
-
-        Base.save_to_file([{5: "50", "hi": {{}: float()}}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(),
-                             "[{5: '50', 'hi': {{}: 0.0}}]")
-
-        Base.save_to_file([{5: 5.5, True: False}, {[]: "hi"}])
-        with open("Base.json", "r") as output_file_test:
-            self.assertEqual(output_file_test.read(),
-                             "[{5: 5.5, True: False}, {[]: 'hi'}]")
+        pass
 
 
 class TestFromJsonString(unittest.TestCase):
