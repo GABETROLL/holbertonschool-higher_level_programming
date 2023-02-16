@@ -13,6 +13,8 @@ def text_indentation(text):
     every ".", "?" or ":".
 
     If 'text' is not a string, TypeError is raised.
+
+    THE TEXT IS PRINTED WITHOUT A FINAL NEW LINE.
     """
     if type(text) != str:
         raise TypeError("text must be a string")
@@ -21,4 +23,4 @@ def text_indentation(text):
     for punctuation in ".?:":
         result = result.replace(punctuation, "\n\n")
 
-    print(result)
+    print(result, end="")

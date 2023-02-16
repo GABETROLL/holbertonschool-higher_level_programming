@@ -30,9 +30,7 @@ Tests for ``text_indentation``:
     >>> text_indentation("how are you?")
     how are you
     <BLANKLINE>
-    <BLANKLINE>
     >>> text_indentation("")
-    <BLANKLINE>
     >>> text_indentation("something.condition ? \"True\" : \"False\"")
     something
     <BLANKLINE>
@@ -41,3 +39,5 @@ Tests for ``text_indentation``:
      "True" 
     <BLANKLINE>
      "False"
+    >>> text_indentation("yay!")
+    yay!
