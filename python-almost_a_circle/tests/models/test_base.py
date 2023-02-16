@@ -7,8 +7,6 @@ from models.square import Square
 class TestBaseConstructor(unittest.TestCase):
     def test_no_parameters(self):
         b = Base()
-        b.id
-
         self.assertEqual(b.id, 1)
 
         b = Base()
