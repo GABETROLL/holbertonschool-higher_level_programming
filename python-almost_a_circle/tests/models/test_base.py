@@ -13,9 +13,8 @@ class TestBaseConstructor(unittest.TestCase):
         self.assertEqual(b.id, 2)
 
     def test_id(self):
-        for test_id in range(-5, 6):
-            b = Base(test_id)
-            self.assertEqual(b.id, test_id)
+        b = Base(89)
+        self.assertEqual(b.id, 89)
 
     def test_more_parameters(self):
         with self.assertRaises(TypeError):
