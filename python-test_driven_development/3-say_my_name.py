@@ -18,13 +18,17 @@ def say_my_name(first_name, last_name=""):
     a string.
 
     If 'last_name' is empty or left default,
-    it's treated as a space.
+    it's treated like it never existed, and after
+    the first name, the line ends instead.
     """
     if type(first_name) != str:
         raise TypeError("first_name must be a string")
     if type(last_name) != str:
         raise TypeError("last_name must be a string")
 
-    if not last_name:
-        last_name = " "
-    print(f"My name is {first_name} {last_name}")
+    print(f"My name is {first_name}", end="")
+
+    if last_name:
+        print(f" {last_name}")
+    else:
+        print()
