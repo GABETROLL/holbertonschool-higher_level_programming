@@ -41,3 +41,7 @@ Tests for ``text_indentation``:
      "False"
     >>> text_indentation("yay!")
     yay!
+    >>> text_indentation(":?><{|)_(_)(+)(+_)+_()_*&(&^&%$^$#)}", "hi")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
