@@ -1,0 +1,43 @@
+The ``5-text_indentation`` module
+==========================
+
+Using ``text_indentation``
+---------------------
+
+Import ``text_indentation`` from the ``5-text_indentation`` module.
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Tests for ``text_indentation``:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+    >>> text_indentation(type)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+    >>> text_indentation(-771)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+    >>> text_indentation("hello, world!")
+    hello, world!
+    >>> text_indentation("how are you?")
+    how are you
+    <BLANKLINE>
+    <BLANKLINE>
+    >>> text_indentation("")
+    <BLANKLINE>
+    >>> text_indentation("something.condition ? \"True\" : \"False\"")
+    something
+    <BLANKLINE>
+    condition 
+    <BLANKLINE>
+     "True" 
+    <BLANKLINE>
+     "False"
