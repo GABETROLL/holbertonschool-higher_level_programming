@@ -4,4 +4,4 @@
 -- (the "&1" is the first argument
 -- (the word after the "source 3-list_tables.sql")
 -- )
-SHOW TABLES &1;
+SHOW TABLES;
