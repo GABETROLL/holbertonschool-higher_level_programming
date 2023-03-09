@@ -1,2 +1,2 @@
--- Dispaly all the databases in the server
+-- Exercise 0: Dispaly all the databases in the server
 SHOW DATABASES;
