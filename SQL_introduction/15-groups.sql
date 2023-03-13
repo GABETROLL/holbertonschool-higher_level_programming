@@ -3,4 +3,4 @@
 -- it's trully present in the table.
 
 -- (but only the score and number)
-SELECT (DISTINCT score, COUNT(DISTINCT score)) FROM second_table;
+SELECT DISTINCT score, COUNT(DISTINCT score) FROM second_table;
