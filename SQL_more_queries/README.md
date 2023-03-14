@@ -1,9 +1,6 @@
 # Learn about MySql permissions and SQL joins
 ## Documentation (made by Holberton)
------
 ### Install MySQL 8.0 on Ubuntu 20.04 LTS
-(I hope the best for your installation process,
-but the documentation says it's running in a computer with an Intel x86 CPU and Linux Ubuntu)
 ```
 $ sudo apt update
 $ sudo apt install mysql-server
