@@ -3,3 +3,4 @@
 -- If the user 'user_0d_1' already exists, this script
 -- shouldn't fail.
 CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+GRANT * ON * TO 'user_0d_1'@'localhost';
