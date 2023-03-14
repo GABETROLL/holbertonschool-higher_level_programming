@@ -9,6 +9,8 @@ $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
 ```
+### Didn't work? Try the official documentation
+https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
 ### Connect to your MySQL server:
 ```
 $ sudo mysql
