@@ -1,5 +1,6 @@
 # Learn about MySql permissions and SQL joins
 ## Documentation (made by Holberton)
+_but slightly modified for the purpose of clear communication and learning_
 ### Install MySQL 8.0 on Ubuntu 20.04 LTS
 ```
 $ sudo apt update
@@ -27,6 +28,9 @@ owners.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
+```
+### How to exit the MySql shell
+```
 mysql> quit
 Bye
 $
