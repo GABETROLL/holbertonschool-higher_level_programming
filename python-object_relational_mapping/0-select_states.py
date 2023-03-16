@@ -13,9 +13,12 @@ import MySQLdb
 if __name__ == "__main__":
     from sys import argv
     database = MySQLdb.connect("localhost", *argv[1:], 3306)
-    
+
     with database.cursor() as cursor:
         cursor.execute("SELECT * FROM states ORDER BY id ASC")
         database.commit()
         result = cursor.fetchall()
-        print(*result, sep="\n")
+        if result:
+            # an empty result shouldn't print anything,
+            # not even a new line.
+            print(*result)
