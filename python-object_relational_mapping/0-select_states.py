@@ -18,4 +18,4 @@ if __name__ == "__main__":
         cursor.execute("SELECT * FROM states ORDER BY id ASC")
         database.commit()
         result = cursor.fetchall()
-        print(result)
+        print(*result, sep="\n")
