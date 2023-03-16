@@ -17,8 +17,9 @@ if __name__ == "__main__":
     database = MySQLdb.connect("localhost", *argv[1:], 3306)
     with database.cursor() as cursor:
         cursor.execute(
-            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+            "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC"
             )
+        # "LIKE BINARY" is case-sensitive.
         database.commit()
         result = cursor.fetchall()
         if result:
