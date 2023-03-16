@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+"""
+Usage: ./2-my_filter_states.py <username> <password>
+    <database name> <state>
+    (all of the arguments are required)
+
+Logs in database in 'localhost' with
+the REQUIRED MySQL: 'username', 'password', 'database
+name' in the above shell arguments.
+
+Prints all the records in the table named 'states',
+in the 'database name' shell argument, that have
+their 'name' column value = the 'state' argument.
+"""
+import MySQLdb
+
+if __name__ == "__main__":
+    from sys import argv
+
+    database = MySQLdb.connect(*argv[1:-1], 3306)
+    with database.cursor() as cursor:
+        cursor.execute("SELECT * FROM states WHERE name={}".format(argv[-1]))
+        database.commit()
+        result = cursor.fetchall()
+        if result:
+            # Empty tuple should make this script
+            # print nothing, and
+            # also no new line.
+            print(*result, sep="\n")
