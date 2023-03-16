@@ -21,4 +21,4 @@ if __name__ == "__main__":
         if result:
             # an empty result shouldn't print anything,
             # not even a new line.
-            print(*result)
+            print(*result, sep="\n")
