@@ -6,7 +6,7 @@ Usage: ./2-my_filter_states.py <username> <password>
 
 Logs in database in 'localhost' with
 the REQUIRED MySQL: 'username', 'password', 'database
-name' in the above shell arguments.
+name' in the above shell arguments, in port 3306.
 
 Prints all the records in the table named 'states',
 in the 'database name' shell argument, that have
@@ -18,7 +18,7 @@ import MySQLdb
 if __name__ == "__main__":
     from sys import argv
 
-    database = MySQLdb.connect(*argv[1:-1], 3306)
+    database = MySQLdb.connect("localhost", *argv[1:-1], 3306)
     with database.cursor() as cursor:
         cursor.execute("SELECT * FROM states WHERE name={}\
                         ORDER BY id ASC".format(argv[-1]))
