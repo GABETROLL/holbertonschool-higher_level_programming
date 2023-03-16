@@ -5,7 +5,8 @@ Usage: ./3-my_filter_states.py
     <MySQL password>
     <MySQL database name>
     <state>
-(all of the arguments are required)
+(all arguments are required, and are
+assumed to be there, without any more arguments)
 
 Logs in database in 'localhost' with
 the REQUIRED MySQL: 'username', 'password', 'database
