@@ -8,8 +8,8 @@ Usage: ./0-select_states.py
 assumed to be there, without any more arguments)
 
 Logs in database in 'localhost' with
-the REQUIRED user, password and database in the
-shell arguments provided when starting this script.
+the REQUIRED MySQL: 'username', 'password', 'database
+name' in the above shell arguments, in port 3306.
 
 Then, it dispays all the rows from the table 'states'
 (hopefully) in the supplied database in the last

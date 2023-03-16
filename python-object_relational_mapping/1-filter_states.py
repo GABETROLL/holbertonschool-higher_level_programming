@@ -8,8 +8,8 @@ Usage: ../1-filter_states.py
 assumed to be there, without any more arguments)
 
 Logs in database in 'localhost' with
-the REQUIRED user, password and database in the
-shell arguments provided when starting this script.
+the REQUIRED MySQL: 'username', 'password', 'database
+name' in the above shell arguments, in port 3306.
 
 Lists all states (in the 'states' table')
 with a 'name' (VARCHAR(256)) starting with "N".
