@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     database = MySQLdb.connect("localhost", *argv[1:-1], 3306)
     with database.cursor() as cursor:
-        cursor.execute("SELECT * FROM states WHERE name={}\
+        cursor.execute("SELECT * FROM states WHERE name='{}'\
                         ORDER BY id ASC".format(argv[-1]))
         database.commit()
         result = cursor.fetchall()
