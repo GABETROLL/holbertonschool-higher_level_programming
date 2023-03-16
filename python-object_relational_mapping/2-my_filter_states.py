@@ -11,6 +11,7 @@ name' in the above shell arguments.
 Prints all the records in the table named 'states',
 in the 'database name' shell argument, that have
 their 'name' column value = the 'state' argument.
+Prints them ordered by their 'id' value, ascending.
 """
 import MySQLdb
 
@@ -19,7 +20,8 @@ if __name__ == "__main__":
 
     database = MySQLdb.connect(*argv[1:-1], 3306)
     with database.cursor() as cursor:
-        cursor.execute("SELECT * FROM states WHERE name={}".format(argv[-1]))
+        cursor.execute("SELECT * FROM states WHERE name={}\
+                        ORDER BY id ASC".format(argv[-1]))
         database.commit()
         result = cursor.fetchall()
         if result:
