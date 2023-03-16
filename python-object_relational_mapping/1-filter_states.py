@@ -21,4 +21,7 @@ if __name__ == "__main__":
             )
         database.commit()
         result = cursor.fetchall()
-        print(result)
+        if result:
+            # Empty tuple should print nothing, and
+            # also no new line.
+            print(*result, end="\n")
