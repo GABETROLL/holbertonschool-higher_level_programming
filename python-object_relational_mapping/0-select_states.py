@@ -12,6 +12,6 @@ import MySQLdb
 
 if __name__ == "__main__":
     from sys import argv
-    database = MySQLdb.connect("localhost", *argv, 3306)
+    database = MySQLdb.connect("localhost", *argv[1:], 3306)
     cursor = database.cursor()
     cursor.query("SELECT * FROM states ORDER BY id ASC")
