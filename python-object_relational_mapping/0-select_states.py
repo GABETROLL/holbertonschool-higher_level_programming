@@ -15,6 +15,7 @@ if __name__ == "__main__":
     database = MySQLdb.connect("localhost", *argv[1:], 3306)
     
     with database.cursor() as cursor:
-        result = cursor.execute("SELECT * FROM states ORDER BY id ASC")
+        cursor.execute("SELECT * FROM states ORDER BY id ASC")
         database.commit()
+        result = cursor.fetchall()
         print(result)
