@@ -15,7 +15,9 @@ if __name__ == "__main__":
     from sys import argv
     database = MySQLdb.connect("localhost", *argv[1:], 3306)
     with database.cursor() as cursor:
-        cursor.execute("SELECT * FROM states WHERE id LIKE 'N%' ORDER BY id ASC")
+        cursor.execute(
+            "SELECT * FROM states WHERE id LIKE 'N%' ORDER BY id ASC"
+            )
         database.commit()
         result = cursor.fetchall()
         print(result)
