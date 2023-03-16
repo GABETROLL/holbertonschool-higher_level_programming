@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 """
+Usage: ./0-select_states.py
+    <MySQL username>
+    <MySQL password>
+    <MySQL database>
+(all arguments are required, and are
+assumed to be there, without any more arguments)
+
 Logs in database in 'localhost' with
 the REQUIRED user, password and database in the
 shell arguments provided when starting this script.

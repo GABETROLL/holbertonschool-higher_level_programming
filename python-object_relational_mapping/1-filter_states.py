@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 """
+Usage: ../1-filter_states.py
+    <MySQL username>
+    <MySQL password>
+    <MySQL database>
+(all arguments are required, and are assumed
+to be there)
+
 Logs in database in 'localhost' with
 the REQUIRED user, password and database in the
 shell arguments provided when starting this script.

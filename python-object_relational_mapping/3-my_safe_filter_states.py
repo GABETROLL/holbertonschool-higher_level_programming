@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-Usage: ./3-my_filter_states.py <username> <password>
-    <database name> <state>
-    (all of the arguments are required)
+Usage: ./3-my_filter_states.py
+    <MySQL username>
+    <MySQL password>
+    <MySQL database name>
+    <state>
+(all of the arguments are required)
 
 Logs in database in 'localhost' with
 the REQUIRED MySQL: 'username', 'password', 'database
