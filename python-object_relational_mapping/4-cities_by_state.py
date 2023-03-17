@@ -23,7 +23,7 @@ if __name__ == "__main__":
         cursor.execute("SELECT id,\
                                name,\
                                (SELECT name FROM states\
-                                    WHERE states.id=cities.id)\
+                                    WHERE states.id=cities.state_id)\
                                     AS state_name\
                         FROM cities ORDER BY id")
         database.commit()
