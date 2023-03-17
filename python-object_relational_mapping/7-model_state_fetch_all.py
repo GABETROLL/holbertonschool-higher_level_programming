@@ -25,5 +25,9 @@ if __name__ == "__main__":
     from sys import argv
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:]))
-    output = select(State)
+    connection = engine.connect()
+
+    statement = select(State)
+    output = connection.execute(statement)
+
     print(output)
