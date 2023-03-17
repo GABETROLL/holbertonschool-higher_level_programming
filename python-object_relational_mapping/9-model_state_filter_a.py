@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Usage: ./8-model_state_fetch_first.py
+Usage: ./8-model_state_filter_a.py
     <MySQL username>
     <MySQL password>
     <database name>
