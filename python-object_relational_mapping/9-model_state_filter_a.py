@@ -13,15 +13,16 @@ output.
 """
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.sql.expression import or_, not_
 from model_state import Base, State
 
 if __name__ == "__main__":
     from sys import argv
 
     engine = create_engine(
-        'mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:])
+        'mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:]),
+        pool_pre_ping=True
         )
+
     Session = sessionmaker(bind=engine)
     session = Session()
 

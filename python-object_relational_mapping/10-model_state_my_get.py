@@ -19,13 +19,13 @@ if __name__ == "__main__":
     from sys import argv
 
     engine = create_engine(
-        'mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:-1])
-        )
+        'mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:-1]),
+        pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
 
     name_to_find = argv[-1]
-    output = session.query(State).filter_by(name=name_to_find)
+    output = session.query(State).filter(State.name == name_to_find)
 
     if output:
         for row in output:
