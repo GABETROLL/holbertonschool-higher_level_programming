@@ -26,10 +26,7 @@ if __name__ == "__main__":
     session = Session()
 
     output = session.query(State)\
-                    .where(or_(State.name.contains("a"),
-                                State.name.contains("A")
-                                )
-                            )
+                    .where(State.name.like("%a%"))
 
     for row in output:
         print(f"{row.id}: {row.name}")
