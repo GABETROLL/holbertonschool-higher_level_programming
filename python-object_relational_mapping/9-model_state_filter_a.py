@@ -26,8 +26,8 @@ if __name__ == "__main__":
     session = Session()
 
     output = session.query(State)\
-                    .where(or_(not_(State.name.contains("a")),
-                                not_(State.name.contains("A"))
+                    .where(or_(State.name.contains("a"),
+                                State.name.contains("A")
                                 )
                             )
 
