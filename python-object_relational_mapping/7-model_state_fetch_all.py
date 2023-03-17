@@ -7,7 +7,7 @@ Usage: ./7-model_state_fetch_all.py
 
 Selects everything from the table named 'states'
 in the database logged in as the user provided
-in the arguments.
+in the arguments. And prints the output.
 
 Definition:
 -----------------------------------
@@ -26,3 +26,4 @@ if __name__ == "__main__":
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:]))
     output = select(State)
+    print(output)
