@@ -11,6 +11,15 @@ Logs in database in 'localhost' with
 the REQUIRED MySQL: 'username', 'password', 'database
 name' in the above shell arguments, in port 3306.
 
+Definition:
+-----------------------------------
+states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+)
+-----------------------------------
+
 Lists all states (in the 'states' table')
 with a 'name' (VARCHAR(256)) starting with "N".
 The table should also have an id INT column.

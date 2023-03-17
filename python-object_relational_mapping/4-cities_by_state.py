@@ -12,6 +12,23 @@ the REQUIRED MySQL: 'username', 'password', 'database
 name' in the above shell arguments, in port 3306.
 
 'execute' can only be used once in this code.
+
+Definitions:
+-----------------------------------------------
+states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+)
+
+cities ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    state_id INT NOT NULL,
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY(state_id) REFERENCES states(id)
+)
+-----------------------------------------------
 """
 import MySQLdb
 
