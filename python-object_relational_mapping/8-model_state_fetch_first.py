@@ -35,3 +35,5 @@ if __name__ == "__main__":
         print(f"{output.id}: {output.name}")
     else:
         print("Nothing")
+
+    session.close()

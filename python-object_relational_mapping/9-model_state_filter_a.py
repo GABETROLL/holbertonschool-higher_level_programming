@@ -13,6 +13,7 @@ output.
 """
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.sql.expression import or_
 from model_state import Base, State
 
 if __name__ == "__main__":
@@ -25,10 +26,12 @@ if __name__ == "__main__":
     session = Session()
 
     output = session.query(State)\
-                    .filter(State.name.contains("a") or \
-                            State.name.contains("A"))
-    
+                    .filter(or_(State.name.contains("a"),
+                                State.name.contains("A")
+                                )
+                            )
+
     for row in output:
         print(f"{row.id}: {row.name}")
-    
+
     session.close()
