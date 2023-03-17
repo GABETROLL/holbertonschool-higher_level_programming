@@ -29,10 +29,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    output = session.query(State).filter(id=1)
+    output = session.query(State).first()
 
-    for row in output:
-        print(f"{row.id}: {row.name}")
-        break
+    if output:
+        print(f"{output.id}: {output.name}")
     else:
         print("Nothing")
