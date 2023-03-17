@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 """
 Usage: ./8-model_state_filter_a.py
     <MySQL username>
