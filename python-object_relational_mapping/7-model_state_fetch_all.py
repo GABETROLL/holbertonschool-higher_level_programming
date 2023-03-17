@@ -11,21 +11,23 @@ in the arguments. And prints the output.
 
 Definition:
 -----------------------------------
-states ( 
-    id INT NOT NULL AUTO_INCREMENT, 
+states (
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(256) NOT NULL,
     PRIMARY KEY (id)
 )
 -----------------------d------------
 """
-from sqlalchemy import select, create_engine
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
 if __name__ == "__main__":
     from sys import argv
 
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:]))
+    engine = create_engine(
+        'mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:])
+        )
     Session = sessionmaker(bind=engine)
     session = Session()
 
