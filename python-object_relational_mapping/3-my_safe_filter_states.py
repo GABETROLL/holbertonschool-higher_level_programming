@@ -32,7 +32,7 @@ in order to prevent a MySql injection.
 import MySQLdb
 
 if __name__ == "__main__":
-    from sys import argv
+    from sys import argv, exit
 
     state = argv[-1]
     if any(not c.isalpha() for c in state):

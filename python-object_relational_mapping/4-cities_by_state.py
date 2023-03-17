@@ -11,6 +11,11 @@ Logs in database in 'localhost' with
 the REQUIRED MySQL: 'username', 'password', 'database
 name' in the above shell arguments, in port 3306.
 
+Lists all cities in the 'cities' and
+their state in the 'state' table, using the
+'state_id' foreign key in the 'cities' table.
+And the city id at the left of all the tuples.
+
 'execute' can only be used once in this code.
 
 Definitions:
