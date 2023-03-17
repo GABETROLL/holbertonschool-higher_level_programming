@@ -16,18 +16,22 @@ states (
     name VARCHAR(256) NOT NULL,
     PRIMARY KEY (id)
 )
------------------------------------
+-----------------------d------------
 """
 from sqlalchemy import select, create_engine
+from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
 if __name__ == "__main__":
     from sys import argv
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(*argv[1:]))
-    connection = engine.connect()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-    statement = select(State)
-    output = connection.execute(statement)
+    output = session.query(State).order_by(State.id)
 
-    print(output)
+    for row in output:
+        print(f"{row.id}: {row.name}")
+
+    session.close()
