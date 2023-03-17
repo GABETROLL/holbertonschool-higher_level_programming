@@ -12,6 +12,9 @@ Base = declarative_base()
 
 
 class State(Base):
+    """
+    States table with name and id
+    """
     __table_name__ = "states"
     id = Column("id", Integer, primary_key=True, autoincrement=True)
     name = Column("name", VARCHAR(128), not_null=True)
