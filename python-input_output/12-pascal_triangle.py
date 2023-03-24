@@ -27,9 +27,15 @@ def pascal_triangle(n):
 
     ALWAYS ASSUMES 'n' IS AN INTEGER.
     """
+    if n <= 0:
+        return []
+
     result = [[1]]
-    for _ in range(n):
+    for _ in range(n - 1):
+        last_row = [0] + result[-1] + [0]
+        print(type(last_row))
         next_row = []
-        for m_index in range(len(result[-1]) - 1):
-            next_row.append(result[-1][m_index] + result[-1][m_index + 1])
+        for m_index in range(len(last_row) - 1):
+            next_row.append(last_row[m_index] + last_row[m_index + 1])
         result.append(next_row)
+    return result
