@@ -7,8 +7,8 @@ attributes are serializable, into a JSON string.
 
 def class_to_json(obj):
     """
-    Returns the JSON stirng form of the object
-    'obj', assuming that all of its attributes
-    are serializable.
+    Returns dictionary form of 'obj',
+    assuming that its attributes are all
+    JSON serializable.
     """
-    return str(obj.__dict__)
+    return obj.__dict__
