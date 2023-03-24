@@ -33,7 +33,6 @@ def pascal_triangle(n):
     result = [[1]]
     for _ in range(n - 1):
         last_row = [0] + result[-1] + [0]
-        print(type(last_row))
         next_row = []
         for m_index in range(len(last_row) - 1):
             next_row.append(last_row[m_index] + last_row[m_index + 1])
