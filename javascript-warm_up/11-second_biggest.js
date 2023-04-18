@@ -7,7 +7,7 @@
 
 const argv = require('process').argv;
 
-let nums = argv.slice(2, undefined);
+const nums = argv.slice(2, undefined);
 nums.sort((a, b) => b - a);
 
 let answer = 0;
