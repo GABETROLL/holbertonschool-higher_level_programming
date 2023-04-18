@@ -1,12 +1,7 @@
 #!/usr/bin/node
 
-// Exercise 0: make a Rectangle class
+// Exercise 0: make an (empty) Rectangle class
 
-class Rectangle {
-  constructor (width, height) {
-    this.width = width;
-    this.height = height;
-  }
-}
+class Rectangle { }
 
 module.exports = Rectangle;
