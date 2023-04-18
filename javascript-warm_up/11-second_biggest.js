@@ -9,7 +9,7 @@ const argv = require('process').argv;
 
 let biggest = undefined;
 
-for (const index of argv) {
+for (const index in argv) {
   if (index < 2) {
     continue;
   }
