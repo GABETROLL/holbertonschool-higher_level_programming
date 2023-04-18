@@ -7,25 +7,15 @@
 
 const argv = require('process').argv;
 
-let biggest = undefined;
+let nums = argv.slice(2, undefined);
+nums.sort((a, b) => b - a);
 
-for (const index in argv) {
-  if (index < 2) {
-    continue;
-  }
+let answer = 0;
 
-  const argInt = parseInt(argv[index]);
-  if (isNaN(argInt)) {
-    continue;
-  }
-
-  if (biggest === undefined || argInt > biggest) {
-    biggest = argInt;
-  }
+if (nums.length === 1) {
+  answer = nums[0];
+} else if (nums.length > 1) {
+  answer = nums[1];
 }
 
-if (biggest === undefined) {
-  biggest = 0;
-}
-
-console.log(biggest);
+console.log(answer);
