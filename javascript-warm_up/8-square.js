@@ -15,6 +15,6 @@ if (isNaN(size) || argv[2] === undefined) {
   console.log('Missing size');
 } else {
   for (let x = 0; x < size; x++) {
-    console.log('x'.repeat(size));
+    console.log('X'.repeat(size));
   }
 }
