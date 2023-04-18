@@ -9,8 +9,8 @@ const process = require('process');
 const argv = process.argv;
 const argInt = parseInt(argv[2]);
 
-if (argInt !== NaN) {
-  console.log('My number: ' + argInt);
-} else {
+if (isNaN(argInt)) {
   console.log('Not a number');
+} else {
+  console.log('My number: ' + argInt);
 }
