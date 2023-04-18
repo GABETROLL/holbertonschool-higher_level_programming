@@ -6,8 +6,9 @@
 // and assigns 'w' to 'width'
 // and 'h' to 'height'.
 
-// If 'w' or 'h' are 0, the constructor creates
-// an empty object
+// If 'w' or 'h' are lower or equal to 0,
+// the constructor creates
+// an empty object.
 
 class Rectangle {
   constructor (w, h) {
