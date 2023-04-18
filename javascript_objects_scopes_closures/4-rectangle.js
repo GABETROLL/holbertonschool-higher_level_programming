@@ -18,6 +18,10 @@
 // make it have a 'rotate' method that exchanges
 // the Rectangle instances' 'width' and 'height'
 // fields.
+// --and--
+// make it have a 'double' method that multiplies
+// the 'width and the 'height' of the Rectangle
+// instance(s) by 2.
 
 class Rectangle {
   constructor (w, h) {
@@ -38,6 +42,11 @@ class Rectangle {
 
   rotate () {
     [this.width, this.height] = [this.height, this.width];
+  }
+
+  double () {
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 

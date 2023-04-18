@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-// Exercise 3: make an Rectangle class
+// Exercise 4: make an Rectangle class
 // with 'width' and 'height' fields,
 // and a constructor that takes args 'w' and 'h'
 // and assigns 'w' to 'width'
@@ -14,6 +14,8 @@
 // make it have a 'print' method to it
 // that prints the Rectangle instance
 // with the character 'X'.
+// --and---
+
 
 class Rectangle {
   constructor (w, h) {
