@@ -12,9 +12,7 @@ nums.sort((a, b) => b - a);
 
 let answer = 0;
 
-if (nums.length === 1) {
-  answer = nums[0];
-} else if (nums.length > 1) {
+if (nums.length > 1) {
   answer = nums[1];
 }
 
