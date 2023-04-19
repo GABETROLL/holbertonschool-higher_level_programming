@@ -4,6 +4,8 @@
 // from the Rectangle class in exercise 4
 // and initializes its sides to a constructor argument,
 // 'size', using 'super'.
+import Rectangle from "./4-rectangle";
+
 class Square extends Rectangle {
   constructor (size) {
     super(size, size);
