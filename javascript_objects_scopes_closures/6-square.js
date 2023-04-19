@@ -16,7 +16,7 @@ class Square1 extends Square {
             c = 'X';
         }
         for (let h = 0; h < this.height; h++) {
-            console.log('X'.repeat(this.w));
+            console.log(c.repeat(this.w));
             // 'h' and 'w' should be the same anyways,
             // and I feel like this is an error-prone
             // way to implement this, but there isn't
