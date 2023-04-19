@@ -11,21 +11,21 @@
 const Square = require('./5-square');
 
 class Square1 extends Square {
-    charPrint(c) {
-        let outputUnit = c;
+  charPrint(c) {
+    let outputUnit = c;
 
-        if (c === undefined) {
-            outputUnit = 'X';
-        }
-
-        for (let h = 0; h < this.height; h++) {
-            console.log(outputUnit.repeat(this.w));
-            // 'h' and 'w' should be the same anyways,
-            // and I feel like this is an error-prone
-            // way to implement this, but there isn't
-            // a 'size' getter here...
-        }
+    if (c === undefined) {
+      outputUnit = 'X';
     }
+
+    for (let h = 0; h < this.height; h++) {
+      console.log(outputUnit.repeat(this.w));
+      // 'h' and 'w' should be the same anyways,
+      // and I feel like this is an error-prone
+      // way to implement this, but there isn't
+      // a 'size' getter here...
+    }
+  }
 }
 
 module.exports = Square1;
