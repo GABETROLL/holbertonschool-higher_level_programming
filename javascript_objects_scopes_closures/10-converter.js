@@ -9,5 +9,5 @@
 // strResult = c(<number>);
 
 exports.converter = function (base) {
-  return ((number) => number.toString(base));
+  return (number) => number.toString(base);
 };
