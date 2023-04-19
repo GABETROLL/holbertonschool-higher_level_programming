@@ -10,7 +10,7 @@
 
 const Square = require('./5-square');
 
-class Square extends Square {
+class Square1 extends Square {
     charPrint(c) {
         if (c === undefined) {
             c = 'X';
@@ -25,4 +25,4 @@ class Square extends Square {
     }
 }
 
-module.exports = Square;
+module.exports = Square1;
