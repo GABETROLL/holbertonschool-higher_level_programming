@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const fs = require('fs');
-const inputFile = require('process').argv[1];
+const inputFile = require('process').argv[2];
 
 if (inputFile != undefined) {
   fs.readFile(inputFile, 'utf-8',
