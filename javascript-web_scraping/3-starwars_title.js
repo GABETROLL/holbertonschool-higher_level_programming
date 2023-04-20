@@ -14,7 +14,7 @@ request(URL + id, function (error, response, body) {
   if (error) {
     console.log('invalid Star Wars movie ID: ' + id);
   } else {
-    console.log(body.title);
+    console.log(JSON.parse(body).title);
     // the API returns the move title in the body's
     // title
   }
