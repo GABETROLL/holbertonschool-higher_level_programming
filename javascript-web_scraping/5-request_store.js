@@ -17,18 +17,16 @@ const outputFile = argv[3];
 const fs = require('fs');
 
 request(URL, function (error, response, body) {
+  if (error) {
+    console.log('error requesting: ' + response);
+    return;
+  }
+  fs.writeFile(outputFile, body, error => {
     if (error) {
-        console.log('error requesting: ' + response);
-        return;
+      console.error(error);
     }
-    fs.writeFile(outputFile, body, error => {
-        if (error) {
-            console.error(error);
-        }
-        // file written successfully
-    }
-    );
+    // file written successfully
+  }
+  );
 }
 );
-
-
