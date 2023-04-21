@@ -26,7 +26,7 @@ request(API, function (error, response, body) {
     for (task of tasks) {
         if (task.completed) {
             if (usersAndTasks[task.userId] === undefined) {
-                usersAndTasks[task.userId] = 0;
+                usersAndTasks[task.userId] = 1;
             } else {
                 usersAndTasks[task.userId]++;
             }
