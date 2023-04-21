@@ -14,26 +14,25 @@ const argv = require('process').argv;
 const API = argv[2];
 
 request(API, function (error, response, body) {
-    if (error) {
-      console.log('error: ' + response);
-      return;
+  if (error) {
+    console.log('error: ' + response);
+    return;
+  }
+
+  const tasks = JSON.parse(body);
+
+  const usersAndTasks = {};
+
+  for (const task of tasks) {
+    if (task.completed) {
+      if (usersAndTasks[task.userId] === undefined) {
+        usersAndTasks[task.userId] = 1;
+      } else {
+        usersAndTasks[task.userId]++;
+      }
     }
+  }
 
-    const tasks = JSON.parse(body);
-
-    let usersAndTasks = {};
-
-    for (task of tasks) {
-        if (task.completed) {
-            if (usersAndTasks[task.userId] === undefined) {
-                usersAndTasks[task.userId] = 1;
-            } else {
-                usersAndTasks[task.userId]++;
-            }
-        }
-    }
-
-    console.log(usersAndTasks);
+  console.log(usersAndTasks);
 }
 );
-  
