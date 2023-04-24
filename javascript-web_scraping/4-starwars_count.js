@@ -15,7 +15,7 @@ request(URL, function (error, response, body) {
   if (error) {
     console.log('error');
   } else {
-    movies_starring_18 = JSON.parse(body).films.length;
-    console.log(movies_starring_18);
+    const moviesStarring18 = JSON.parse(body).films.length;
+    console.log(moviesStarring18);
   }
 });
