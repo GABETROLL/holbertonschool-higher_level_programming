@@ -25,8 +25,6 @@ request(URL, function (error, response, body) {
   } else {
     const allMovies = JSON.parse(body).results;
 
-    console.log(allMovies);
-
     let moviesStarring18 = 0;
     for (movie of allMovies) {
       if (movie.characters.includes(character18Url)) {
