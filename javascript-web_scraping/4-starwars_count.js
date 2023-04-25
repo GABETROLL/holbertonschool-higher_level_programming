@@ -6,6 +6,8 @@ where the character "Wedge Antilles",
 
 whose character URL is
 'https://swapi-api.hbtn.io/api/people/18/',
+(but we only care about the last part
+of the URL: '18/')
 
 is present
 from this API: https://swapi-api.hbtn.io/api/films/
@@ -15,7 +17,6 @@ shell argument for this script.
 
 const process = require('process');
 const URL = process.argv[2];
-const character18Url = 'https://swapi-api.hbtn.io/api/people/18/';
 
 const request = require('request');
 
@@ -27,7 +28,7 @@ request(URL, function (error, response, body) {
 
     let moviesStarring18 = 0;
     for (movie of allMovies) {
-      if (movie.characters.includes(character18Url)) {
+      if (movie.characters.some((item) => item.endsWith('18/'))) {
         moviesStarring18++;
       }
     }
